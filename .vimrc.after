@@ -1,0 +1,52 @@
+let mapleader = ","
+
+" show hidden files in nerdtree
+let NERDTreeShowHidden=1
+" map nerdtree to ,ne
+nmap <leader>ne :NERDTree<cr>
+" move focus to nerdtree from ctrl+n
+map <silent> <C-n> :NERDTreeFocus<CR>
+
+" show hidden files in ctrl-p
+let g:ctrlp_show_hidden = 1
+
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set wrap
+set linebreak
+set nolist
+set textwidth=0
+set wrapmargin=0
+
+" recognize .eye as ruby
+au BufNewFile,BufRead *.eye set filetype=ruby
+
+" toggle highlights on columns >80
+" toggle with <leader>H
+nnoremap <Leader>H :call<SID>LongLineHLToggle()<cr>
+hi OverLength ctermbg=none cterm=none
+match OverLength /\%>80v/
+fun! s:LongLineHLToggle()
+ if !exists('w:longlinehl')
+  let w:longlinehl = matchadd('ErrorMsg', '.\%>80v', 0)
+  echo "Long lines highlighted"
+ else
+  call matchdelete(w:longlinehl)
+  unl w:longlinehl
+  echo "Long lines unhighlighted"
+ endif
+endfunction
+
+" Send more characters for redraws
+set ttyfast
+
+" Enable mouse use in all modes
+set mouse=a
+
+" Set this to the name of your terminal that supports mouse codes.
+" Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
+set ttymouse=xterm2
+
+let g:airline_theme = 'tomorrow'

@@ -1,0 +1,8 @@
+set bell-style offff
+set completion-ignore-case on
+set completion-map-case on
+set show-all-if-ambiguous on
+set print-completions-horizontally on
+
+# Don't use pager when showing completion-map-casens
+set page-completions off

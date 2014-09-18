@@ -14,7 +14,7 @@ GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 
 # aliases
-alias ls="ls -FG"
+alias ls="ls -G"
 alias diff="colordiff"
 alias vi="vim"
 alias be="bundle exec"

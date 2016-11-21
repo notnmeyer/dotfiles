@@ -49,4 +49,4 @@ set mouse=a
 " Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
 set ttymouse=xterm2
 
-let g:airline_theme = 'tomorrow'
+let g:airline_theme = 'base16_railscasts'

@@ -1,22 +1,29 @@
+if [[ -z "$TMUX" ]]; then
+  tmux attach || tmux
+fi
+
+# check for CVEs
+dig +short -t txt istheinternetonfire.com
+
+source $HOME/.bashrc
 source $HOME/.secrets
-source $HOME/.bin/git-prompt.sh
-source $HOME/.bin/git-completion.bash
+
+export TEST_DATA_BAG_PATH=/th/chef-test-data-bags/data_bags
+export TEST_DATA_BAG_SECRET=/th/chef-test-data-bags/encrypted_data_bag_secret
+export INFRASTRUCTURE_REPO=/th/infrastructure
+export SETUP_COOKBOOK_PATH=/th/base-cookbook/test/fixtures/cookbooks/setup
 
 export EDITOR=vim
 export HISTFILESIZE=99999999
-export PS1='\n\[$(tput setaf 5)\]\h\[$(tput setaf 7)\] \[$(tput setaf 4)\]chef:$(chefvm current) \[$(tput setaf 7)\]\w\[$(tput setaf 2)\]$(__git_ps1 " [%s]") \[$(tput setaf 4)\]\n>\[$(tput sgr0)\] '
-export PATH=/usr/local/git/bin:$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/Applications/Postgres.app/Contents/MacOS/bin:$PATH
 
-# git prompt support
-GIT_PS1_SHOWCOLORHINTS=true
-GIT_PS1_SHOWSTASHSTATE=true
-GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWUNTRACKEDFILES=true
+export PYENV_ROOT="$HOME/.pyenv"
+export RBENV_ROOT="$HOME/.rbenv"
+export PATH="$PYENV_ROOT/bin:$RBENV_ROOT/bin:$HOME/bin:$PATH"
 
-# aliases
-alias ls="ls -G"
-alias diff="colordiff"
-alias vi="vim"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# ruby aliases
 alias be="bundle exec"
 
 # git aliases
@@ -37,17 +44,6 @@ function glc {
   git log --pretty=format:"* %an: %s" -$1
 }
 
-# tunnels
-alias m1t="ssh -Nn mini01-tunnel > /dev/null 2>&1 &"
-alias m2t="ssh -Nn mini02-tunnel > /dev/null 2>&1 &"
-
-
-# rbenv shit
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# chefvm shit
-eval "$(/Users/nate/.chefvm/bin/chefvm init -)"
-
 # test kitchen aliases
 alias kis="kitchen setup"
 alias kic="kitchen converge"
@@ -61,7 +57,6 @@ alias b="berks"
 alias bupload="berks upload"
 alias bupdate="berks update"
 alias bapply="berks apply"
-alias bt="ssh -Nn berks-tunnel > /dev/null 2>&1 &"
 
 # knife aliases/functions
 alias ks="knife status"
@@ -70,12 +65,15 @@ alias ksearch="knife search"
 alias kssh="knife ssh"
 alias kns="knife node show"
 alias kdbs="knife data bag show"
-alias kdbe="knife data bag edit"
-alias kdbc="knife data bag create"
 
-function s {
-  knife search node node_name:$1 -a fqdn | grep fqdn | awk '{print $2}'
+function kk { 
+  sed -i "${1}d" $HOME/.ssh/known_hosts
 }
 
-# bash autocomplete
-bind 'Tab: menu-complete'
+function servers_from_stack {
+  for server in $(openstack stack resource list $1 -n 2 | egrep "::Server\s" | awk '{print $4}'); do
+    addresses=$(openstack server show $server | egrep '\| addresses\s' | awk '{print $4}')
+    name=$(openstack server show $server | egrep '\| name\s' | awk '{print $4}')
+    echo "${name}: ${addresses}"
+  done
+}

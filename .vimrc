@@ -66,6 +66,7 @@ nmap \; :CtrlPSmartTabs<CR>
 set encoding=utf-8
 set t_Co=256
 set smartindent
+set breakindent
 set tabstop=2
 set shiftwidth=2
 set expandtab

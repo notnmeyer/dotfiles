@@ -36,17 +36,14 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    ".config/helix/config.toml".source = dotfiles/dot_config-helix-config.toml;
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
-
-    # # You can also set the file content immediately.
-    # ".gradle/gradle.properties".text = ''
-    #   org.gradle.console=verbose
-    #   org.gradle.daemon.idletimeout=3600000
-    # '';
+    ".config/alacritty/alacritty.yml".source = dotfiles/dot_config/alacritty/alacritty.yml;
+    ".config/fish/functions/fish_prompt.fish".source = dotfiles/dot_config/fish/functions/fish_prompt.fish;
+    ".config/gh/config.yml".source = dotfiles/dot_config/gh/config.yml;
+    ".config/helix/config.toml".source = dotfiles/dot_config/helix/config.toml;
+    ".gemrc".source = dotfiles/dot_gemrc;
+    ".terraformrc".source = dotfiles/dot_terraformrc;
+    ".tmux.conf".source = dotfiles/dot_tmux.conf;
+    ".wezterm.lua".source = dotfiles/dot_wezterm.lua;
   };
 
   # You can also manage environment variables but you will have to manually
@@ -60,7 +57,9 @@
   #
   # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    AWS_DEFAULT_REGION = "us-east-1";
+    AWS_DEFAULT_OUTPUT = "json";
+    EDITOR = "hx";
   };
 
   # Let Home Manager install and manage itself.

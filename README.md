@@ -19,8 +19,25 @@ orb \
 orb nix-shell '<home-manager>' -A install
 ```
 
-## edit .config/home-manager/* as necessary
+## clone the repo
 
-## home-manager does not manage system changes
+```shell
+mkdir ~/code
+nix-shell -p git --run "git clone https://github.com/notnmeyer/dotfiles ~/code/dotfiles"
+```
 
-those either go in `/etc/nixos/configuration.nix` or anywhere by specifying the file when rebuilding, `nixos-rebuild switch -I nixos-config=<path to file>`.
+## apply user changes
+
+from the root of the repo,
+
+`home-manager switch -I ./home-manager/home.nix`
+
+or move the `home-manager` directory to `~/.config/` and drop the `-I` argument.
+
+## apply system changes
+
+from the root of the repo,
+
+`sudo nixos-rebuild switch _ ./configuration.nix`
+
+or move `configuration/nix` to `/etc/nixos/configuration.nix` and drop the `-I` argument.

@@ -1,0 +1,28 @@
+theme = "jellybeans"
+
+[editor]
+auto-format = true
+auto-save = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = false
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control"]
+center = ["file-modification-indicator", "file-name"]
+right = ["workspace-diagnostics", "diagnostics", "selections", "position", "file-encoding", "file-type"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.soft-wrap]
+enable = true

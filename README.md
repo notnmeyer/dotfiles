@@ -38,6 +38,6 @@ or move the `home-manager` directory to `~/.config/` and drop the `-I` argument.
 
 from the root of the repo,
 
-`sudo nixos-rebuild switch _ ./configuration.nix`
+`sudo nixos-rebuild switch -I ./configuration.nix`
 
 or move `configuration/nix` to `/etc/nixos/configuration.nix` and drop the `-I` argument.

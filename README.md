@@ -31,7 +31,7 @@ nix-shell -p git --run "git clone https://github.com/notnmeyer/dotfiles ~/code/d
 
 from the root of the repo,
 
-`home-manager switch -f ./home-manager/home.nix`
+`orb home-manager switch -f /Users/nate/code/dotfiles/home-manager/home.nix`
 
 or move the `home-manager` directory to `~/.config/` and drop the `-f` argument.
 
@@ -41,6 +41,6 @@ or move the `home-manager` directory to `~/.config/` and drop the `-f` argument.
 
 from the root of the repo,
 
-`sudo nixos-rebuild switch -I nixos-config=./configuration.nix`
+`orb sudo nixos-rebuild switch -I nixos-config=/Users/nate/code/dotfiles/configuration.nix`
 
 or move `configuration/nix` to `/etc/nixos/configuration.nix` and drop the `-I` argument.

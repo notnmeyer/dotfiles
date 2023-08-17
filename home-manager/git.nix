@@ -7,15 +7,18 @@
       co = "checkout";
       cob = "checkout -b";
     };
-    extraConfig = {
-      init = { defaultBranch = "main"; };
-      color = { ui = "auto"; };
-      "credential \"https://github.com\"" = {
-        helper = "!`which gh` auth git-credential"; 
+  };
+
+  programs.gh = {
+    enable = true;
+    enableGitCredentialHelper = true;
+    settings = {
+      aliases = {
+        co = "pr checkout";
+        pv = "pr view";
       };
-      "credential \"https://gist.github.com\"" = {
-        helper = "!`which gh` auth git-credential";
-      };
+      git_protocol = "https";
+      prompt = "enabled";
     };
   };
 }

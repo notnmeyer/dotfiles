@@ -21,5 +21,6 @@
       gp = "git push origin (git branch --show-current)";
       gs = "git status";
     };
+    interactiveShellInit = "any-nix-shell fish --info-right | source";
   };
 }

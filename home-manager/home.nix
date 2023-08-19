@@ -1,6 +1,6 @@
-#
-# https://mipmip.github.io/home-manager-option-search/
-#
+# docs:
+#   - man home-configuration.nix
+#   - https://mipmip.github.io/home-manager-option-search/
 
 { config, pkgs, ... }:
 

@@ -75,7 +75,7 @@ function fish_prompt
     end
   end
 
-  if pwd | egrep "\/code\/" >/dev/null
+  if pwd | egrep '/code/' >/dev/null
     echo "$host $cwd $k8s$aws$repo_info $normal"
     echo -e -s "" $arrow
   else

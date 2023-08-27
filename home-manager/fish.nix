@@ -24,9 +24,14 @@
     interactiveShellInit = ''
       begin
         set -g fish_user_paths \
-          "$HOME/.nix-profile/bin" \
           "$HOME/.cargo/bin" \
           "$HOME/bin" \
+          "$fish_user_paths"
+
+        # for macos
+        set -g fish_user_paths \
+          "/nix/var/nix/profiles/default/bin/" \
+          "$HOME/.nix-profile/bin" \
           "$fish_user_paths"
       end
       any-nix-shell fish --info-right | source;

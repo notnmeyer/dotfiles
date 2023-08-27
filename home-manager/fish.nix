@@ -21,6 +21,15 @@
       gp = "git push origin (git branch --show-current)";
       gs = "git status";
     };
-    interactiveShellInit = "any-nix-shell fish --info-right | source";
+    interactiveShellInit = ''
+      begin
+        set -g fish_user_paths \
+          "$HOME/.nix-profile/bin" \
+          "$HOME/.cargo/bin" \
+          "$HOME/bin" \
+          "$fish_user_paths"
+      end
+      any-nix-shell fish --info-right | source;
+    '';
   };
 }

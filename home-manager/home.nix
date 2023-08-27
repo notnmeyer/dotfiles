@@ -22,6 +22,7 @@
     fish
     nodePackages.bash-language-server
     shellcheck
+    tig
   ];
 
   programs = {

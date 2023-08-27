@@ -10,21 +10,25 @@
     ./git.nix
   ];
 
+
+  # todo: try and do an optional thing like, https://github.com/ereslibre/dotfiles/blob/main/home.nix#L18-L20
   home.username = "nate";
-  home.homeDirectory = "/home/nate";
+  # home.homeDirectory = "/home/nate";
+  home.homeDirectory = "/Users/nate";
 
   home.packages = with pkgs; [
     anonymousPro    
-
     any-nix-shell # use the existing shell with `nix run` and `nix-shell`
-    ripgrep
+    fish
+    nodePackages.bash-language-server
+    shellcheck
   ];
 
   programs = {
     bat.enable = true;
     helix.enable = true;
     home-manager.enable = true;
-    # ripgrep.enable = true;
+    ripgrep.enable = true;
   };
 
   home.file = {

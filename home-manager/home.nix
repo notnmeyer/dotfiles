@@ -8,6 +8,8 @@
   imports = [
     ./fish.nix
     ./git.nix
+    ./nushell.nix
+    ./starship.nix
   ];
 
 
@@ -19,17 +21,29 @@
   home.packages = with pkgs; [
     anonymousPro    
     any-nix-shell # use the existing shell with `nix run` and `nix-shell`
+    aws-vault
     fish
+    htop
     nodePackages.bash-language-server
     shellcheck
     tig
   ];
 
   programs = {
-    bat.enable = true;
+    bat = {
+      enable = true;
+      config = {
+        theme = "Solarized (dark)";
+      };
+    };
+
     helix.enable = true;
     home-manager.enable = true;
     ripgrep.enable = true;
+
+    # necessary for starship to configure them
+    bash.enable = true;
+    zsh.enable = true;
   };
 
   home.file = {

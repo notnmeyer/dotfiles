@@ -12,11 +12,9 @@
     ./starship.nix
   ];
 
-
-  # todo: try and do an optional thing like, https://github.com/ereslibre/dotfiles/blob/main/home.nix#L18-L20
   home.username = "nate";
-  # home.homeDirectory = "/home/nate";
-  home.homeDirectory = "/Users/nate";
+  # all i care about is if this is macos or linux
+  home.homeDirectory = if pkgs.stdenv.isDarwin then "/Users/nate" else "/home/nate";
 
   home.packages = with pkgs; [
     anonymousPro    

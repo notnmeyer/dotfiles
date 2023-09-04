@@ -23,6 +23,7 @@
     any-nix-shell # use the existing shell with `nix run` and `nix-shell`
     aws-vault
     fish
+    go-task
     htop
     nodePackages.bash-language-server
     shellcheck

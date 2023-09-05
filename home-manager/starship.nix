@@ -11,9 +11,8 @@
         error_symbol = "[➜](bold red)";
       };
 
-      gcloud = {
-        disabled = true;
-      };
+      container.disabled = true;
+      gcloud.disabled = true;
     };
   };
 }

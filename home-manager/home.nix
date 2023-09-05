@@ -60,6 +60,7 @@
   home.sessionVariables = {
     AWS_DEFAULT_REGION = "us-east-1";
     AWS_DEFAULT_OUTPUT = "json";
+    AWS_VAULT_BACKEND = if pkgs.stdenv.isDarwin then "keychain" else "file";
     EDITOR = "hx";
   };
 

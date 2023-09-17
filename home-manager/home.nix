@@ -25,6 +25,7 @@
     fish
     go-task
     htop
+    lazygit
     nodePackages.bash-language-server
     shellcheck
     tig

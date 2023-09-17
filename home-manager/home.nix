@@ -17,7 +17,7 @@
   home.homeDirectory = if pkgs.stdenv.isDarwin then "/Users/nate" else "/home/nate";
 
   home.packages = with pkgs; [
-    anonymousPro    
+    anonymousPro
     any-nix-shell # use the existing shell with `nix run` and `nix-shell`
     awscli2
     aws-vault

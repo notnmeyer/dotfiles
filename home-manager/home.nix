@@ -9,6 +9,7 @@
     ./fish.nix
     ./git.nix
     ./nushell.nix
+    ./neovim.nix
     ./starship.nix
   ];
 

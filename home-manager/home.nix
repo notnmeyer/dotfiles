@@ -23,12 +23,16 @@
     awscli2
     aws-vault
     fish
+    fzf
     go-task
     htop
+    jq
     lazygit
     nodePackages.bash-language-server
     shellcheck
     tig
+    tree
+    wget
   ];
 
   programs = {

@@ -1,8 +1,13 @@
-theme = "ayu_mirage"
+theme = "jellybeans"
 
 [editor]
 auto-format = true
 auto-save = true
+bufferline = "always"
+color-modes = true
+insert-final-newline = true
+text-width = 100
+true-color = true
 
 [editor.cursor-shape]
 normal = "block"
@@ -17,12 +22,10 @@ display-messages = true
 display-inlay-hints = false
 
 [editor.statusline]
-left = ["mode", "spinner", "version-control"]
+left = ["mode", "spinner", "read-only-indicator", "version-control"]
 center = ["file-modification-indicator", "file-name"]
-right = ["workspace-diagnostics", "diagnostics", "selections", "position", "file-encoding", "file-type"]
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
+right = ["workspace-diagnostics", "diagnostics", "register", "selections", "position", "file-encoding", "file-type"]
 
 [editor.soft-wrap]
 enable = true
+wrap-at-text-width = true

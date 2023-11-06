@@ -26,10 +26,7 @@
         set -g fish_user_paths \
           "$HOME/.cargo/bin" \
           "$HOME/bin" \
-          "$fish_user_paths"
-
-        # for macos
-        set -g fish_user_paths \
+          "$HOME/go/bin" \
           "/nix/var/nix/profiles/default/bin/" \
           "$HOME/.nix-profile/bin" \
           "$fish_user_paths"

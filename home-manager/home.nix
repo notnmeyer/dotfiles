@@ -34,6 +34,7 @@
     tig
     tree
     wget
+    yq
   ];
 
   programs = {
@@ -49,8 +50,8 @@
     ripgrep.enable = true;
 
     # necessary for starship to configure them
-    bash.enable = true;
-    zsh.enable = true;
+    bash.enable = false;
+    zsh.enable = false;
   };
 
   home.file = {
@@ -63,14 +64,21 @@
     ".terraformrc".source = dotfiles/dot_terraformrc;
     ".tmux.conf".source = dotfiles/dot_tmux.conf;
     ".wezterm.lua".source = dotfiles/dot_wezterm.lua;
+
+    ".config/nvim" = {
+      source = dotfiles/dot_config/nvim;
+      recursive = true;
+    };
   };
 
   home.sessionVariables = {
-    AWS_DEFAULT_REGION = "us-east-1";
-    AWS_DEFAULT_OUTPUT = "json";
     AWS_VAULT_BACKEND = if pkgs.stdenv.isDarwin then "keychain" else "file";
     EDITOR = "hx";
   };
+
+  home.sessionPath = [
+    "$HOME/.local/bin"
+  ];
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release

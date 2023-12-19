@@ -27,6 +27,7 @@
           "$HOME/.cargo/bin" \
           "$HOME/bin" \
           "$HOME/go/bin" \
+          "$HOME/.local/bin" \
           "/nix/var/nix/profiles/default/bin/" \
           "$HOME/.nix-profile/bin" \
           "$fish_user_paths"

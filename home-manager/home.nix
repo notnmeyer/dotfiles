@@ -8,8 +8,8 @@
   imports = [
     ./fish.nix
     ./git.nix
-    ./nushell.nix
     ./neovim.nix
+    ./nushell.nix
     ./starship.nix
   ];
 
@@ -22,6 +22,7 @@
     any-nix-shell # use the existing shell with `nix run` and `nix-shell`
     awscli2
     aws-vault
+    fd
     fish
     fzf
     go-task

@@ -1,7 +1,11 @@
+[language-server.ruby-lsp]
+command = "ruby-lsp"
+
 [[language]]
 name = "ruby"
 auto-format = true
 formatter = { command = "rubocop", args = ["--stdin", "foo.rb", "-a", "--stderr", "--fail-level", "fatal"] }
+language-servers = ["ruby-lsp"]
 
 [[language]]
 name = "typescript"

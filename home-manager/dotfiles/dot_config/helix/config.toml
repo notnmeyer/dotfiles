@@ -1,13 +1,15 @@
-theme = "jellybeans"
+theme = "base16_transparent"
 
 [editor]
 auto-format = true
 auto-save = true
 bufferline = "always"
 color-modes = true
+cursorline = true
 insert-final-newline = true
-text-width = 100
+text-width = 150
 true-color = true
+line-number = "relative"
 
 [editor.cursor-shape]
 normal = "block"

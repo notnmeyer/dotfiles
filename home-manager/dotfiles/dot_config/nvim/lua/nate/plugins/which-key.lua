@@ -6,8 +6,24 @@ return {
     vim.o.timeoutlen = 500
   end,
   opts = {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
+    plugins = { spelling = true },
+    defaults = {
+      mode = { "n", "v" },
+      ["g"] = { name = "+goto" },
+      ["gs"] = { name = "+surround" },
+      ["]"] = { name = "+next" },
+      ["["] = { name = "+prev" },
+      ["<leader>f"] = { name = "+Telescope" },
+      ["<leader>e"] = { name = "+File Tree" },
+      ["<leader>h"] = { name = "+Harpoon" },
+      ["<leader>m"] = { name = "+Formatting"},
+      ["<leader>s"] = { name = "+Search" },
+      ["<leader>w"] = { name = "+Session" },
+    },
   },
+  config = function(_, opts)
+    local wk = require("which-key")
+    wk.setup(opts)
+    wk.register(opts.defaults)
+  end,
 }

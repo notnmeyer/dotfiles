@@ -23,6 +23,6 @@ require("lazy").setup({
     notify = false, -- but be quiet about them
   },
   change_detection = {
-    notify = true,
+    notify = false,
   },
 })

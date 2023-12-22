@@ -25,12 +25,14 @@
     fd
     fish
     fzf
+    gnutar
     go-task
     htop
     jq
     lazygit
     nodePackages.bash-language-server
     shellcheck
+    inetutils # for telnet
     tig
     tree
     wget
@@ -59,7 +61,6 @@
     ".config/fish/functions/ak.fish".source = dotfiles/dot_config/fish/functions/ak.fish;
     ".config/helix/config.toml".source = dotfiles/dot_config/helix/config.toml;
     ".config/helix/languages.toml".source = dotfiles/dot_config/helix/languages.toml;
-    ".config/lvim/config.lua".source = dotfiles/dot_config/lvim/config.lua;
     ".gemrc".source = dotfiles/dot_gemrc;
     ".terraformrc".source = dotfiles/dot_terraformrc;
     ".tmux.conf".source = dotfiles/dot_tmux.conf;

@@ -1,29 +1,29 @@
-local wezterm = require 'wezterm'
+local wezterm = require("wezterm")
 local config = {}
 
 if wezterm.config_builder then
-  config = wezterm.config_builder()
+	config = wezterm.config_builder()
 end
 
 -- colors
-config.color_scheme = 'darkmoss (base16)'
+config.color_scheme = "darkmoss (base16)"
 config.colors = {
-  cursor_fg = 'white'
+	cursor_fg = "white",
 }
 
 -- window
 config.window_decorations = "RESIZE"
 config.window_padding = {
-  left = '1cell',
-  right = '1cell',
-  top = 0,
-  bottom = 0,
+	left = "1cell",
+	right = "1cell",
+	top = 0,
+	bottom = 0,
 }
 
 -- fonts
-config.font = wezterm.font {
-  family = 'Dank Mono',
-}
+config.font = wezterm.font({
+	family = "Dank Mono",
+})
 config.font_size = 16
 config.adjust_window_size_when_changing_font_size = false
 
@@ -45,11 +45,11 @@ config.hide_tab_bar_if_only_one_tab = true
 
 -- keybinds
 config.keys = {
-  {
-    key = 'r',
-    mods = 'CMD|SHIFT',
-    action = wezterm.action.ReloadConfiguration,
-  },
+	{
+		key = "r",
+		mods = "CMD|SHIFT",
+		action = wezterm.action.ReloadConfiguration,
+	},
 }
 
 return config

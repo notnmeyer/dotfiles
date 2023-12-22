@@ -26,10 +26,12 @@
     fish
     fzf
     gnutar
+    go
     go-task
     htop
     jq
     lazygit
+    nil # nix ls
     nodePackages.bash-language-server
     shellcheck
     inetutils # for telnet

@@ -17,7 +17,6 @@ with lib;
 
   programs.fish.enable = true;
   users.users.nate = {
-    group = "nate";
     extraGroups = [
       "wheel"
       "docker"

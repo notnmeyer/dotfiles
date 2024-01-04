@@ -61,6 +61,7 @@
   home.file = {
     ".config/alacritty/alacritty.yml".source = dotfiles/dot_config/alacritty/alacritty.yml;
     ".config/fish/functions/ak.fish".source = dotfiles/dot_config/fish/functions/ak.fish;
+    ".config/fish/functions/gg.fish".source = dotfiles/dot_config/fish/functions/gg.fish;
     ".config/helix/config.toml".source = dotfiles/dot_config/helix/config.toml;
     ".config/helix/languages.toml".source = dotfiles/dot_config/helix/languages.toml;
     ".gemrc".source = dotfiles/dot_gemrc;

@@ -31,13 +31,11 @@ return {
 				"cssls",
 				"dockerls",
 				"docker_compose_language_service",
-				-- "gopls", -- handled per-project
 				"graphql",
 				"html",
 				"jsonls",
-				"jq-lsp",
+				"jqls",
 				"lua_ls",
-				-- "nil_ls", -- installed by the system
 				"tailwindcss",
 				"terraformls",
 				"tsserver",

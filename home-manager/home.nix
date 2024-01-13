@@ -29,12 +29,13 @@
     go
     go-task
     htop
+    inetutils # for telnet
     jq
     lazygit
     nil # nix ls
     nodePackages.bash-language-server
+    qemu
     shellcheck
-    inetutils # for telnet
     tig
     tree
     wget

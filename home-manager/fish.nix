@@ -21,6 +21,7 @@
       gp = "git push origin (git branch --show-current)";
       gs = "git status";
     };
+
     interactiveShellInit = ''
       begin
         set -g fish_user_paths \

@@ -67,14 +67,20 @@
 
   home.file = {
     ".config/alacritty/alacritty.yml".source = dotfiles/dot_config/alacritty/alacritty.yml;
-    ".config/fish/functions/ak.fish".source = dotfiles/dot_config/fish/functions/ak.fish;
-    ".config/fish/functions/gg.fish".source = dotfiles/dot_config/fish/functions/gg.fish;
-    ".config/helix/config.toml".source = dotfiles/dot_config/helix/config.toml;
-    ".config/helix/languages.toml".source = dotfiles/dot_config/helix/languages.toml;
     ".gemrc".source = dotfiles/dot_gemrc;
     ".terraformrc".source = dotfiles/dot_terraformrc;
     ".tmux.conf".source = dotfiles/dot_tmux.conf;
     ".wezterm.lua".source = dotfiles/dot_wezterm.lua;
+
+    ".config/fish" = {
+      source = dotfiles/dot_config/fish;
+      recursive = true;
+    };
+
+    ".config/helix" = {
+      source = dotfiles/dot_config/helix;
+      recursive = true;
+    };
 
     ".config/nvim" = {
       source = dotfiles/dot_config/nvim;

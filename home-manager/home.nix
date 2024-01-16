@@ -42,6 +42,7 @@
     qemu
     shellcheck
     tig
+    tmux
     tree
     wget
     yq

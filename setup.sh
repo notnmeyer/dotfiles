@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -eu
 
+#
+# set up a devbox with an orbstack vm
+#
+
 NAME=${NAME:-nixos}
 ORB_CMD="orb -m $NAME"
 SET_DEFAULT="${SET_DEFAULT:-true}"
@@ -30,5 +34,10 @@ $ORB_CMD home-manager switch -f "${DOTFILES_DIR}/home-manager/home.nix"
 
 # run nixos-rebuild
 $ORB_CMD sudo nixos-rebuild switch -I nixos-config="${DOTFILES_DIR}/configuration.nix"
+
+# the host's $HOME will be mounted automatically at /Users/<user>, create some symlinks between the host and the guest
+# homedirs for ergonomics
+$ORB_CMD ln -s ~/.local/share/fish/fish_history /home/nate/.local/share/fish/fish_history
+$ORB_CMD ln -s ~/code/                          /home/nate/code
 
 echo "Done!"

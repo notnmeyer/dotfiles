@@ -30,6 +30,7 @@
     fd
     fish
     fzf
+    gnumake
     gnutar
     go
     go-task
@@ -37,6 +38,7 @@
     inetutils # for telnet
     jq
     lazygit
+    libgcc
     nil # nix ls
     nodePackages.bash-language-server
     qemu

@@ -40,4 +40,7 @@ $ORB_CMD sudo nixos-rebuild switch -I nixos-config="${DOTFILES_DIR}/configuratio
 $ORB_CMD ln -s ~/.local/share/fish/fish_history /home/nate/.local/share/fish/fish_history
 $ORB_CMD ln -s ~/code/                          /home/nate/code
 
+$ORB_CMD rm /home/nate/.gitconfig
+$ORB_CMD ln -s ~/.gitconfig                     /home/nate/.gitconfig
+
 echo "Done!"

@@ -40,7 +40,7 @@
     inetutils # for telnet
     jq
     lazygit
-    libgcc
+    # libgcc # not available on macos :\
     nil # nix ls
     nodePackages.bash-language-server
     qemu

@@ -19,6 +19,8 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
+config.window_background_opacity = 0.90
+config.macos_window_background_blur = 20
 
 -- fonts
 config.font = wezterm.font({

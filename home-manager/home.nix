@@ -27,6 +27,8 @@
     any-nix-shell # use the existing shell with `nix run` and `nix-shell`
     awscli2
     aws-vault
+    bun
+    docker-compose
     fd
     fish
     fzf
@@ -46,6 +48,7 @@
     tig
     tmux
     tree
+    watchexec
     wget
     yq
   ];

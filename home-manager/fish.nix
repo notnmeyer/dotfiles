@@ -34,6 +34,7 @@
           "$fish_user_paths"
       end
       any-nix-shell fish --info-right | source;
+      eval (/opt/homebrew/bin/brew shellenv)
     '';
   };
 }

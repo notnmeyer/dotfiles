@@ -35,6 +35,12 @@
       end
       any-nix-shell fish --info-right | source;
       eval (/opt/homebrew/bin/brew shellenv)
+
+      if asdf --help >/dev/null
+        source "$HOME/.nix-profile/share/asdf-vm/asdf.fish"
+        source "$HOME/.nix-profile/share/asdf-vm/completions/asdf.fish"
+      end
+
     '';
   };
 }

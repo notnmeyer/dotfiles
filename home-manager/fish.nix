@@ -31,6 +31,7 @@
           "$HOME/.local/bin" \
           "/nix/var/nix/profiles/default/bin/" \
           "$HOME/.nix-profile/bin" \
+          "/opt/homebrew/bin" \
           "$fish_user_paths"
       end
       any-nix-shell fish --info-right | source;

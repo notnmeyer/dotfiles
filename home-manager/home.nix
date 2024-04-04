@@ -34,20 +34,23 @@
     fzf
     gnumake
     gnutar
-    go
     go-task
     htop
     inetutils # for telnet
     jq
     lazygit
+    mosh
     # libgcc # not available on macos :\
     nil # nix ls
     nodePackages.bash-language-server
+    nodePackages.prettier
+    nodePackages.typescript-language-server
     qemu
     shellcheck
     tig
     tmux
     tree
+    watch
     watchexec
     wget
     yq
@@ -64,6 +67,11 @@
     helix.enable = true;
     home-manager.enable = true;
     ripgrep.enable = true;
+
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
 
     # necessary for starship to configure them
     bash.enable = false;

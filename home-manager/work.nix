@@ -30,18 +30,26 @@
     docker-compose
     fd
     fzf
+    git
+    gitflow
+    git-lfs
+    glow
     gnumake
     gnutar
     go
     go-task
+    gradle
     htop
     inetutils # for telnet
     jq
+    kotlin-language-server
     lazygit
     lua-language-server
     # libgcc # not available on macos :\
+    maven
     nil # nix ls
     nodePackages.bash-language-server
+    postgresql_16
     qemu
     shellcheck
     tig
@@ -49,6 +57,7 @@
     tree
     watchexec
     wget
+    yarn
     yq
   ];
 

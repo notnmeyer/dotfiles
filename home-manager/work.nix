@@ -35,6 +35,7 @@
     git-lfs
     glow
     gnumake
+    gnupg
     gnutar
     go
     go-task
@@ -57,7 +58,6 @@
     tree
     watchexec
     wget
-    yarn
     yq
   ];
 

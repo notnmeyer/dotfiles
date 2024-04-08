@@ -59,6 +59,7 @@
     watchexec
     wget
     yq
+    zoxide
   ];
 
   programs = {

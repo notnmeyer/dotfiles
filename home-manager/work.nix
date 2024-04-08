@@ -84,11 +84,6 @@
     ".tmux.conf".source = dotfiles/dot_tmux.conf;
     ".wezterm.lua".source = dotfiles/dot_wezterm.lua;
 
-    ".config/fish" = {
-      source = dotfiles/dot_config/fish;
-      recursive = true;
-    };
-
     ".config/helix" = {
       source = dotfiles/dot_config/helix;
       recursive = true;

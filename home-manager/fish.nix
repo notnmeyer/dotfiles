@@ -10,6 +10,10 @@
         body = "code --remote ssh-remote+\"$argv[1]\" \"$argv[2]\"";
         description = "slightly shorten the syntax for launch remote vscode sessions";
       };
+      gg = {
+        body = "lazygit \"$argv\"";
+        wraps = "lazygit";
+      };
     };
     shellAliases = {
       # git

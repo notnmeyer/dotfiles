@@ -23,9 +23,9 @@ config.window_background_opacity = 0.90
 config.macos_window_background_blur = 20
 
 -- fonts
-config.font = wezterm.font({
-	family = "Dank Mono",
-})
+config.font = wezterm.font(
+	{ family = "Anonymous Pro" }
+)
 config.font_size = 16
 config.adjust_window_size_when_changing_font_size = false
 

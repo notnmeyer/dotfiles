@@ -18,7 +18,6 @@
   ];
 
   home.username = "nmeyer";
-  # all i care about is if this is macos or linux
   home.homeDirectory = "/Users/nmeyer";
 
   home.packages = with pkgs; [

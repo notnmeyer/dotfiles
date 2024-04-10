@@ -20,6 +20,7 @@
     };
     shellAliases = {
       # git
+      # test
       ga = "git add $argv";
       gap = "git add -p";
       gd = "git diff $argv";

@@ -14,13 +14,14 @@
         body = "lazygit \"$argv\"";
         wraps = "lazygit";
       };
+      gc = {
+        body = "git commit \"$argv\"";
+      };
     };
     shellAliases = {
       # git
-      # test
       ga = "git add $argv";
       gap = "git add -p";
-      gc = "git commit $argv";
       gd = "git diff $argv";
       gpr = "git pull --rebase";
       gp = "git push origin (git branch --show-current)";

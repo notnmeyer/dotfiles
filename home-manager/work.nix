@@ -27,6 +27,7 @@
     awscli2
     aws-vault
     docker-compose
+    envsubst
     fd
     fzf
     git

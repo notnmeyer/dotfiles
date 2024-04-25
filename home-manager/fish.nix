@@ -41,12 +41,12 @@
       any-nix-shell fish --info-right | source;
       eval (/opt/homebrew/bin/brew shellenv)
 
-      if asdf --help >/dev/null
+      if which asdf
         source "$HOME/.nix-profile/share/asdf-vm/asdf.fish"
         source "$HOME/.nix-profile/share/asdf-vm/completions/asdf.fish"
       end
 
-      if zoxide --help >/dev/null
+      if which zoxide
         zoxide init fish | source
       end
     '';

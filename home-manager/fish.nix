@@ -46,6 +46,9 @@
         source "$HOME/.nix-profile/share/asdf-vm/completions/asdf.fish"
       end
 
+      if zoxide --help >/dev/null
+        zoxide init fish | source
+      end
     '';
   };
 }

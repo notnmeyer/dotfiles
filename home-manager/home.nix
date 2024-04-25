@@ -32,6 +32,7 @@
     fd
     fish
     fzf
+    glow
     gnumake
     gnutar
     go-task
@@ -54,6 +55,7 @@
     watchexec
     wget
     yq
+    zoxide
   ];
 
   programs = {

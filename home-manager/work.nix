@@ -26,7 +26,9 @@
     asdf-vm
     awscli2
     aws-vault
+    container-structure-test
     docker-compose
+    envsubst
     fd
     fzf
     git

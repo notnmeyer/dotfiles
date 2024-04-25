@@ -17,10 +17,10 @@
     };
     shellAliases = {
       # git
-      ga = "git add $argv";
+      ga = "git add";
       gap = "git add -p";
-      gc = "git commit $argv";
-      gd = "git diff $argv";
+      gc = "git commit";
+      gd = "git diff";
       gpr = "git pull --rebase";
       gp = "git push origin (git branch --show-current)";
       gs = "git status";

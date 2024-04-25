@@ -7,6 +7,11 @@
       co = "checkout";
       cob = "checkout -b";
     };
+    extraConfig = {
+      push = {
+        autoSetupRemote = "true";
+      };
+    };
   };
 
   programs.gh = {

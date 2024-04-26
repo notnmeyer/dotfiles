@@ -15,6 +15,7 @@
     ./git.nix
     ./neovim.nix
     ./starship.nix
+    ./work-overrides.nix
   ];
 
   home.username = "nmeyer";

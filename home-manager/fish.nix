@@ -22,7 +22,7 @@
       gc = "git commit";
       gd = "git diff";
       gpr = "git pull --rebase";
-      gp = "git push origin (git branch --show-current)";
+      gp = "git push -u origin (git branch --show-current)";
       gs = "git status";
     };
 

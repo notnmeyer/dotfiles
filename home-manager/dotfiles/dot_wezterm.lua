@@ -27,8 +27,8 @@ config.initial_rows = 44
 
 -- fonts
 config.font = wezterm.font_with_fallback {
-	{ family = "Anonymous Pro" },
 	{ family = "Dank Mono" },
+	{ family = "Anonymous Pro" },
 }
 config.font_size = 16
 config.adjust_window_size_when_changing_font_size = false

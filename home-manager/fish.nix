@@ -39,7 +39,11 @@
           "$fish_user_paths"
       end
       any-nix-shell fish --info-right | source;
-      eval (/opt/homebrew/bin/brew shellenv)
+
+      # set up macos homebrew, if installed
+      if test -f /opt/homebrew/bin/brew >/dev/null
+        eval (/opt/homebrew/bin/brew shellenv)
+      end
 
       if which asdf >/dev/null
         source "$HOME/.nix-profile/share/asdf-vm/asdf.fish"

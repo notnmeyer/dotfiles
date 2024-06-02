@@ -43,6 +43,7 @@
     mosh
     # libgcc # not available on macos :\
     nil # nix ls
+    nodejs_22
     nodePackages.bash-language-server
     nodePackages.prettier
     nodePackages.typescript-language-server
@@ -54,7 +55,9 @@
     watch
     watchexec
     wget
+    yarn-berry
     yq
+    zellij
     zoxide
   ];
 

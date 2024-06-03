@@ -85,6 +85,7 @@
 
   home.file = {
     ".config/alacritty/alacritty.yml".source = dotfiles/dot_config/alacritty/alacritty.yml;
+    ".config/zellij/config.kdl".source = dotfiles/dot_config/zellij/config.kdl;
     ".gemrc".source = dotfiles/dot_gemrc;
     ".terraformrc".source = dotfiles/dot_terraformrc;
     ".tmux.conf".source = dotfiles/dot_tmux.conf;

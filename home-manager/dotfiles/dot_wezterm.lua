@@ -58,6 +58,6 @@ config.keys = {
 	},
 }
 
-config.default_prog = { "zellij", "-l", "welcome" }
+config.default_prog = { os.getenv('HOME') .. "/.nix-profile/bin/zellij", "-l", "welcome" }
 
 return config

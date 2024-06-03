@@ -22,10 +22,14 @@ config.window_padding = {
 config.window_background_opacity = 0.90
 config.macos_window_background_blur = 20
 
+-- set the initial size of the window
+config.initial_rows = 44
+
 -- fonts
-config.font = wezterm.font(
-	{ family = "Anonymous Pro" }
-)
+config.font = wezterm.font_with_fallback {
+	{ family = "Dank Mono" },
+	{ family = "Anonymous Pro" },
+}
 config.font_size = 16
 config.adjust_window_size_when_changing_font_size = false
 
@@ -53,5 +57,7 @@ config.keys = {
 		action = wezterm.action.ReloadConfiguration,
 	},
 }
+
+config.default_prog = { "zellij", "-l", "welcome" }
 
 return config

@@ -3,8 +3,9 @@
 #   - https://mipmip.github.io/home-manager-option-search/
 
 { config, pkgs, ... }:
-
-{
+let
+  commonPackages = import ./common.nix { inherit pkgs; };
+in {
   nix = {
     package = pkgs.nix;
     settings.experimental-features = [ "nix-command" "flakes" ];
@@ -22,48 +23,13 @@
   home.homeDirectory = "/Users/nmeyer";
 
   home.packages = with pkgs; [
-    anonymousPro
-    any-nix-shell # use the existing shell with `nix run` and `nix-shell`
     asdf-vm
-    awscli2
-    aws-vault
-    docker-compose
     envsubst
-    fd
-    fzf
-    git
-    gitflow
-    git-lfs
-    glow
-    gnumake
-    gnupg
-    gnutar
-    go
-    go-task
     gradle
-    htop
-    inetutils # for telnet
-    jq
     kotlin-language-server
-    lazygit
-    lua-language-server
-    # libgcc # not available on macos :\
     maven
-    nil # nix ls
-    nodePackages.bash-language-server
-    postgresql_16
-    qemu
-    shellcheck
-    tig
-    tmux
-    tree
-    watchexec
-    wget
-    yaml-language-server
-    yq
-    zellij
-    zoxide
-  ];
+    nodePackages.typescript-language-server
+  ] ++ commonPackages;
 
   programs = {
     bat = {
@@ -84,6 +50,7 @@
 
   home.file = {
     ".config/alacritty/alacritty.yml".source = dotfiles/dot_config/alacritty/alacritty.yml;
+    ".config/zellij/config.kdl".source = dotfiles/dot_config/zellij/config.kdl;
     ".terraformrc".source = dotfiles/dot_terraformrc;
     ".tmux.conf".source = dotfiles/dot_tmux.conf;
     ".wezterm.lua".source = dotfiles/dot_wezterm.lua;

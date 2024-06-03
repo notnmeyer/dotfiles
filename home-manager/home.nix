@@ -3,8 +3,9 @@
 #   - https://mipmip.github.io/home-manager-option-search/
 
 { config, pkgs, ... }:
-
-{
+let
+  commonPackages = import ./common.nix { inherit pkgs; };
+in {
   nix = {
     package = pkgs.nix;
     settings.experimental-features = [ "nix-command" "flakes" ];
@@ -25,41 +26,10 @@
   home.packages = with pkgs; [
     anonymousPro
     any-nix-shell # use the existing shell with `nix run` and `nix-shell`
-    awscli2
-    aws-vault
     bun
-    docker-compose
-    fd
-    fish
-    fzf
-    glow
-    gnumake
-    gnutar
-    go-task
-    htop
-    inetutils # for telnet
-    jq
-    lazygit
-    mosh
-    # libgcc # not available on macos :\
-    nil # nix ls
     nodejs_22
-    nodePackages.bash-language-server
-    nodePackages.prettier
-    nodePackages.typescript-language-server
-    qemu
-    shellcheck
-    tig
-    tmux
-    tree
-    watch
-    watchexec
-    wget
     yarn-berry
-    yq
-    zellij
-    zoxide
-  ];
+  ] ++ commonPackages;
 
   programs = {
     bat = {

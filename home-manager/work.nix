@@ -59,6 +59,7 @@
     tree
     watchexec
     wget
+    yaml-language-server
     yq
     zoxide
   ];

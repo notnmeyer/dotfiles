@@ -53,6 +53,11 @@
       if which zoxide >/dev/null
         zoxide init fish | source
       end
+
+      if which asdf >/dev/null
+        source ~/.nix-profile/share/asdf-vm/asdf.fish
+        source ~/.nix-profile/share/asdf-vm/completions/asdf.fish
+      end
     '';
   };
 }

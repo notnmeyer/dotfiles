@@ -1,5 +1,35 @@
 # dotfiles
 
+## install nix
+via multi-user installation from: https://nixos.org/download
+```shell
+sh <(curl -L https://nixos.org/nix/install)
+```
+
+## install home-manager
+``` shell
+nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager && \
+nix-channel --update && \
+nix-shell '<home-manager>' -A install
+```
+
+## apply updates
+``` shell
+home-manager switch -f ~/code/dotfiles/home-manager/(home|work).nix
+```
+
+## notes
+
+- after a fresh installation, set up fish:
+  ``` shell
+  sudo sh -c 'echo "/Users/nate/.nix-profile/bin/fish" >> /etc/shells'
+  chsh -s /Users/nate/.nix-profile/bin/fish
+  ```
+
+---
+
+# with orbstack (deprecated)
+
 ## creating nixos vm with orbstack
 `orbctl create nixos $NAME`
 

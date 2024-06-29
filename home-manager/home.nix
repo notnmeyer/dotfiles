@@ -25,10 +25,6 @@ in {
 
   home.packages = with pkgs; [
     anonymousPro
-    any-nix-shell # use the existing shell with `nix run` and `nix-shell`
-    asdf-vm
-    nodejs_22
-    yarn-berry
   ] ++ commonPackages;
 
   programs = {

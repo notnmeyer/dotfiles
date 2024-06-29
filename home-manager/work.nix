@@ -23,12 +23,7 @@ in {
   home.homeDirectory = "/Users/nmeyer";
 
   home.packages = with pkgs; [
-    asdf-vm
-    envsubst
-    gradle
-    kotlin-language-server
-    maven
-    nodePackages.typescript-language-server
+    anonymousPro
   ] ++ commonPackages;
 
   programs = {

@@ -27,6 +27,7 @@
   # libgcc # not available on macos :\
   nil # nix ls
   nodePackages.bash-language-server
+  nodePackages.typescript-language-server
   nodePackages.prettier
   postgresql_16
   qemu

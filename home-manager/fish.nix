@@ -58,6 +58,10 @@
         source ~/.nix-profile/share/asdf-vm/asdf.fish
         source ~/.nix-profile/share/asdf-vm/completions/asdf.fish
       end
+
+      if test -f "$HOME/.config/fish/conf.d/secrets.env"
+        source "$HOME/.config/fish/conf.d/secrets.env"
+      end
     '';
   };
 }

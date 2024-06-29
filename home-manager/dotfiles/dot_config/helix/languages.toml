@@ -1,3 +1,9 @@
+[language-server.gpt]
+command = "bun"
+args = ["run", "/Users/nate/bin/helix-gpt", "--handler", "copilot"]
+# with logging
+# args = ["run", "/Users/nate/bin/helix-gpt", "--handler", "copilot", "--logFile", "/tmp/helix-gpt.log"]
+
 [language-server.ruby-lsp]
 command = "ruby-lsp"
 
@@ -18,7 +24,8 @@ language-servers = [
 [[language]]
 name = "go"
 language-servers = [
-    "gopls"
+    "gopls",
+    "gpt"
 ]
 
 [[language]]

@@ -11,6 +11,9 @@
       push = {
         autoSetupRemote = "true";
       };
+      "includeIf \"gitdir:~/code/work/\"" = {
+        path = "~/code/work/.gitconfig-work";
+      };
     };
   };
 

@@ -6,3 +6,17 @@ cmds = ["home-manager switch -f ~/code/dotfiles/home-manager/{{.CLI_ARGS}}.nix"]
 
 [tasks.run_with_backups]
 cmds = ["home-manager switch -f ~/code/dotfiles/home-manager/{{.CLI_ARGS}}.nix -b backup"]
+
+[tasks."asdf:install"]
+cmds = ["asdf install"]
+
+[tasks."asdf:install_plugins"]
+cmds = [
+  "asdf plugin add nodejs",
+  "asdf plugin add terraform",
+  "asdf plugin add vault",
+  "asdf plugin add istioctl",
+  "asdf plugin add argocd",
+  "asdf plugin add kubectl",
+  "asdf plugin add python",
+]

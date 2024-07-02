@@ -47,6 +47,7 @@ in {
     ".config/zellij/config.kdl".source = dotfiles/dot_config/zellij/config.kdl;
     ".terraformrc".source = dotfiles/dot_terraformrc;
     ".tmux.conf".source = dotfiles/dot_tmux.conf;
+    ".tool-versions".source = dotfiles/dot_tool-versions;
     ".wezterm.lua".source = dotfiles/dot_wezterm.lua;
 
     ".config/helix" = {

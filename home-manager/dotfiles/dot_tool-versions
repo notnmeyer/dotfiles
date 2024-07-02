@@ -5,3 +5,4 @@ kubectl 1.24.0
 nodejs 18.18.2
 python 3.11.9
 terraform 1.3.6
+vault 1.17.1

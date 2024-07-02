@@ -7,12 +7,15 @@
       co = "checkout";
       cob = "checkout -b";
     };
+    includes = [
+      {
+        condition = "gitdir:~/code/work/";
+        path = "~/code/work/.gitconfig-work";
+      }
+    ];
     extraConfig = {
       push = {
         autoSetupRemote = "true";
-      };
-      "includeIf \"gitdir:~/code/work/\"" = {
-        path = "~/code/work/.gitconfig-work";
       };
     };
   };

@@ -22,7 +22,7 @@
         co = "pr checkout";
         pv = "pr view";
       };
-      git_protocol = "https";
+      git_protocol = "ssh";
       prompt = "enabled";
     };
   };

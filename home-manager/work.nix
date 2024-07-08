@@ -23,6 +23,15 @@ in {
 
   home.packages = with pkgs; [
     anonymousPro
+    aws-vault
+    golangci-lint
+    kubernetes-helm
+    kustomize
+    pre-commit
+    terraform-docs
+    tflint
+    trivy
+    yamllint
   ] ++ commonPackages;
 
   programs = {

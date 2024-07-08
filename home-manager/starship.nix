@@ -14,6 +14,9 @@
       container.disabled = true;
       gcloud.disabled = true;
       kubernetes.disabled = false;
+
+      # the git integration (and some others) can be slow
+      command_timeout = 1000; # ms
     };
   };
 }

@@ -24,13 +24,17 @@ in {
   home.packages = with pkgs; [
     anonymousPro
     aws-vault
+    dotnet-sdk_8
     golangci-lint
+    jdk
     kubernetes-helm
     kustomize
+    nodePackages.gulp
     pre-commit
     terraform-docs
     tflint
     trivy
+    typescript
     yamllint
   ] ++ commonPackages;
 

@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "3ec4565e3785efcbf6bd767560b1d767bfa43b72"
+        "revision": "28207a9a4ef830c3397e01dd06a7c41989597061"
       },
       "notnmeyer/daylog-cli": {
         "revision": "4bfdc9e7e351020a14b1fa3b552e953ac723e339"
@@ -89,13 +89,31 @@
         "options": {
           "full_name": "wezterm"
         }
+      },
+      "1password": {
+        "version": "8.10.36",
+        "options": {
+          "full_name": "1password"
+        }
+      },
+      "docker": {
+        "version": "4.31.0,153195",
+        "options": {
+          "full_name": "docker"
+        }
+      },
+      "obsidian": {
+        "version": "1.6.5",
+        "options": {
+          "full_name": "obsidian"
+        }
       }
     }
   },
   "system": {
     "macos": {
       "sonoma": {
-        "HOMEBREW_VERSION": "4.3.8",
+        "HOMEBREW_VERSION": "4.3.9",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.3.0.0.1.1708646388",

@@ -29,7 +29,6 @@ in {
     jdk
     kubernetes-helm
     kustomize
-    nodePackages.gulp
     pre-commit
     terraform-docs
     tflint

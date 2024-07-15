@@ -31,6 +31,7 @@
   nodePackages.prettier
   postgresql_16
   qemu
+  rustup
   shellcheck
   tig
   tmux

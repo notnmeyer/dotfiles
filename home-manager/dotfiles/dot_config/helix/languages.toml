@@ -25,7 +25,6 @@ language-servers = [
 name = "go"
 language-servers = [
     "gopls",
-    "gpt"
 ]
 
 [[language]]

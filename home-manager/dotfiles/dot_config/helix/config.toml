@@ -6,6 +6,7 @@ bufferline = "never"
 color-modes = true
 completion-replace = true
 cursorline = true
+end-of-line-diagnostics = "hint"
 insert-final-newline = true
 text-width = 160
 true-color = true
@@ -34,3 +35,6 @@ hidden = false
 [editor.soft-wrap]
 enable = true
 wrap-at-text-width = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"

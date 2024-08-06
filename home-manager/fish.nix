@@ -39,6 +39,12 @@
           "/usr/local/bin" \
           "$fish_user_paths"
       end
+
+      # not super sure if this is necessary. if an OS update breaks things, try this
+      # if test -f /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish >/dev/null
+      #   source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
+      # end
+      
       any-nix-shell fish --info-right | source;
 
       # set up macos homebrew, if installed

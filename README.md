@@ -1,5 +1,8 @@
 # dotfiles
 
+## new machine or setting up from scratch?
+check out the [initial bootstrap](./docs/bootstrapping-a-new-machine.md) stuff first.
+
 ## install nix
 via multi-user installation from: https://nixos.org/download
 ```shell

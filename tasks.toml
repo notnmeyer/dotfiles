@@ -1,7 +1,9 @@
-[tasks."work:brew:install"]
-cmds = ["brew bundle --file work/brew/Brewfile"]
+[tasks."brew:install"]
+description = "usage: tsk brew:install -- (work|home)"
+cmds = ["brew bundle --file {{.CLI_ARGS}}/brew/Brewfile"]
 
 [tasks.run]
+description = "usage: tsk run -- (work|home)"
 cmds = ["home-manager switch -f ~/code/dotfiles/home-manager/{{.CLI_ARGS}}.nix"]
 
 [tasks.run_with_backups]

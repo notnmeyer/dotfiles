@@ -1,0 +1,14 @@
+tap "homebrew/bundle"
+tap "notnmeyer/daylog-cli"
+tap "notnmeyer/tsk"
+
+brew "gh"
+brew "notnmeyer/daylog-cli/daylog"
+brew "notnmeyer/tsk/tsk"
+
+cask "1password"
+cask "1password-cli"
+cask "chatgpt"
+cask "obsidian"
+cask "visual-studio-code"
+cask "wezterm"

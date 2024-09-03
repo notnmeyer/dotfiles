@@ -1,4 +1,4 @@
-theme = "material_palenight"
+theme = "default"
 
 [editor]
 auto-save = true

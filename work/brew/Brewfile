@@ -5,6 +5,7 @@ tap "notnmeyer/tsk"
 brew "gh"
 brew "notnmeyer/daylog-cli/daylog"
 brew "notnmeyer/tsk/tsk"
+brew "docker-credential-helper-ecr"
 
 cask "1password"
 cask "1password-cli"

@@ -24,6 +24,7 @@ in {
   home.packages = with pkgs; [
     anonymousPro
     aws-vault
+    conftest
     dotnet-sdk_8
     golangci-lint
     jdk
@@ -31,6 +32,7 @@ in {
     kustomize
     pre-commit
     terraform-docs
+    terraform-ls
     tflint
     trivy
     typescript

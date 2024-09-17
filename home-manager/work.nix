@@ -24,6 +24,7 @@ in {
   home.packages = with pkgs; [
     anonymousPro
     aws-vault
+    chamber
     conftest
     dotnet-sdk_8
     golangci-lint

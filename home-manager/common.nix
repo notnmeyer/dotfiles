@@ -6,6 +6,7 @@
   aws-vault
   docker-compose
   envsubst
+  eza
   fd
   fish
   fzf

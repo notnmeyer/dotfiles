@@ -28,6 +28,7 @@ in {
     conftest
     dotnet-sdk_8
     golangci-lint
+    groovy
     jdk
     kubernetes-helm
     kustomize

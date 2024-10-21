@@ -7,6 +7,14 @@ args = ["run", "/Users/nate/bin/helix-gpt", "--handler", "copilot"]
 [language-server.ruby-lsp]
 command = "ruby-lsp"
 
+[language-server.yaml-language-server.config.yaml]
+format = { enable = true }
+validation = true
+
+[language-server.yaml-language-server.config.yaml.schemas]
+"https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
+"https://json.schemastore.org/taskfile.json" = "{Taskfile,tasks}.yml"
+
 [[language]]
 name = "ruby"
 auto-format = true

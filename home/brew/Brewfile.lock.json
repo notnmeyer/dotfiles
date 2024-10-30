@@ -104,7 +104,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.94.2",
+        "version": "1.95.0",
         "options": {
           "full_name": "visual-studio-code"
         }
@@ -113,6 +113,12 @@
         "version": "20240203-110809,5046fc22",
         "options": {
           "full_name": "wezterm"
+        }
+      },
+      "plex": {
+        "version": "1.103.1.238,223cbba6",
+        "options": {
+          "full_name": "plex"
         }
       }
     }

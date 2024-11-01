@@ -32,6 +32,7 @@ in {
     jdk
     kubernetes-helm
     kustomize
+    mysql84
     pre-commit
     terraform-docs
     terraform-ls

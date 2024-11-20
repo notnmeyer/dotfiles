@@ -2,13 +2,13 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "88ecf2f0f8fe496c2f8994df4d820dd791aea69a"
+        "revision": "df3d86335bdd977136e89f8020d4a6c773bd5a8a"
       },
       "notnmeyer/daylog-cli": {
-        "revision": "4bfdc9e7e351020a14b1fa3b552e953ac723e339"
+        "revision": "a93a44c4fd103f4f1c324f2aa885601b7120df76"
       },
       "notnmeyer/tsk": {
-        "revision": "b887ce93f10d6004bb503c103ccf49ac7b1052d8"
+        "revision": "38279f7a329f20e1414cc05dfda1ef39f6e33436"
       }
     },
     "brew": {
@@ -57,53 +57,48 @@
         }
       },
       "notnmeyer/daylog-cli/daylog": {
-        "version": "0.2.1",
+        "version": "0.3.0",
         "bottle": false
       },
       "notnmeyer/tsk/tsk": {
-        "version": "0.9.0",
+        "version": "0.9.3",
         "bottle": false
       },
       "docker-credential-helper-ecr": {
-        "version": "0.8.0",
+        "version": "0.9.0",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
+            "arm64_sequoia": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:162b30db65989114c0d53c3866eabcdd14ad39e656e52968a602441dd7315af8",
+              "sha256": "162b30db65989114c0d53c3866eabcdd14ad39e656e52968a602441dd7315af8"
+            },
             "arm64_sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:3f873d6f0c3a04233146794507346b99f55abfd85a130ec35bcf9a8d29dd82b4",
-              "sha256": "3f873d6f0c3a04233146794507346b99f55abfd85a130ec35bcf9a8d29dd82b4"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:162b30db65989114c0d53c3866eabcdd14ad39e656e52968a602441dd7315af8",
+              "sha256": "162b30db65989114c0d53c3866eabcdd14ad39e656e52968a602441dd7315af8"
             },
             "arm64_ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:3f873d6f0c3a04233146794507346b99f55abfd85a130ec35bcf9a8d29dd82b4",
-              "sha256": "3f873d6f0c3a04233146794507346b99f55abfd85a130ec35bcf9a8d29dd82b4"
-            },
-            "arm64_monterey": {
-              "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:3f873d6f0c3a04233146794507346b99f55abfd85a130ec35bcf9a8d29dd82b4",
-              "sha256": "3f873d6f0c3a04233146794507346b99f55abfd85a130ec35bcf9a8d29dd82b4"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:162b30db65989114c0d53c3866eabcdd14ad39e656e52968a602441dd7315af8",
+              "sha256": "162b30db65989114c0d53c3866eabcdd14ad39e656e52968a602441dd7315af8"
             },
             "sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:c46a758bda76377f33b87d2f612dbda72b990aeee931429aee3d7b18650c27e4",
-              "sha256": "c46a758bda76377f33b87d2f612dbda72b990aeee931429aee3d7b18650c27e4"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:0698aafc16bf4a94fe87a73fad1845f6fdfc3d62bc256590698bed8958c365ae",
+              "sha256": "0698aafc16bf4a94fe87a73fad1845f6fdfc3d62bc256590698bed8958c365ae"
             },
             "ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:c46a758bda76377f33b87d2f612dbda72b990aeee931429aee3d7b18650c27e4",
-              "sha256": "c46a758bda76377f33b87d2f612dbda72b990aeee931429aee3d7b18650c27e4"
-            },
-            "monterey": {
-              "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:c46a758bda76377f33b87d2f612dbda72b990aeee931429aee3d7b18650c27e4",
-              "sha256": "c46a758bda76377f33b87d2f612dbda72b990aeee931429aee3d7b18650c27e4"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:0698aafc16bf4a94fe87a73fad1845f6fdfc3d62bc256590698bed8958c365ae",
+              "sha256": "0698aafc16bf4a94fe87a73fad1845f6fdfc3d62bc256590698bed8958c365ae"
             },
             "x86_64_linux": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:2f4418572e63b5dfae324fd48ebf7fbc6d1cc5add18698b88cc6ae95579c0e44",
-              "sha256": "2f4418572e63b5dfae324fd48ebf7fbc6d1cc5add18698b88cc6ae95579c0e44"
+              "url": "https://ghcr.io/v2/homebrew/core/docker-credential-helper-ecr/blobs/sha256:b778b0daccf6fd640c2d3dc04355ed2fbb8791971d79cd4f4650c1a7b0a331ff",
+              "sha256": "b778b0daccf6fd640c2d3dc04355ed2fbb8791971d79cd4f4650c1a7b0a331ff"
             }
           }
         }
@@ -111,7 +106,7 @@
     },
     "cask": {
       "1password-cli": {
-        "version": "2.30.0",
+        "version": "2.30.3",
         "options": {
           "full_name": "1password-cli"
         }
@@ -123,7 +118,7 @@
         }
       },
       "orbstack": {
-        "version": "1.6.3_17138",
+        "version": "1.8.2_18394",
         "options": {
           "full_name": "orbstack"
         }
@@ -135,7 +130,7 @@
         }
       },
       "1password": {
-        "version": "8.10.40",
+        "version": "8.10.52",
         "options": {
           "full_name": "1password"
         }
@@ -153,9 +148,21 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.92.2",
+        "version": "1.95.3",
         "options": {
           "full_name": "visual-studio-code"
+        }
+      },
+      "utc-menu-clock": {
+        "version": "1.3",
+        "options": {
+          "full_name": "utc-menu-clock"
+        }
+      },
+      "spotify": {
+        "version": "1.2.50.335",
+        "options": {
+          "full_name": "spotify"
         }
       }
     }
@@ -169,6 +176,14 @@
         "CLT": "15.3.0.0.1.1708646388",
         "Xcode": "15.4",
         "macOS": "14.6"
+      },
+      "sequoia": {
+        "HOMEBREW_VERSION": "4.4.6",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "16.1.0.0.1.1729049160",
+        "Xcode": "16.0",
+        "macOS": "15.1.1"
       }
     }
   }

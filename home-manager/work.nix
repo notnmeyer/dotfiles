@@ -18,27 +18,15 @@ in {
     ./starship.nix
   ];
 
-  home.username = "nmeyer";
-  home.homeDirectory = "/Users/nmeyer";
+  home.username = "nate";
+  home.homeDirectory = "/Users/nate";
 
   home.packages = with pkgs; [
     anonymousPro
     aws-vault
     chamber
-    conftest
-    dotnet-sdk_8
-    golangci-lint
-    groovy
-    jdk
-    kubernetes-helm
-    kustomize
-    mysql84
-    pre-commit
-    terraform-docs
     terraform-ls
     tflint
-    trivy
-    typescript
     yamllint
   ] ++ commonPackages;
 

@@ -26,7 +26,7 @@ log into 1pw
 
 ## clone dotfiles
 ```
-mkdir ~/code && ~/code
+mkdir ~/code && cd ~/code
 git clone git@github.com:notnmeyer/dotfiles.git
 ```
 

@@ -25,8 +25,8 @@ home-manager switch -f ~/code/dotfiles/home-manager/(home|work).nix
 
 - after a fresh installation, set up fish:
   ``` shell
-  sudo sh -c 'echo "/Users/nate/.nix-profile/bin/fish" >> /etc/shells'
-  chsh -s /Users/nate/.nix-profile/bin/fish
+  sudo sh -c 'echo $(which fish) >> /etc/shells'
+  chsh -s $(which fish)
   ```
 
 ---

@@ -20,9 +20,9 @@ don't bother putting this into .zsh
 
 log into 1pw
 
-## copy ssh stuff from a known good machine
+## copy ssh key from a known good machine
 
-`scp -r wormulon:~/.ssh/ ~/`
+`scp -r "wormulon:~/.ssh/id_ed25519*" ~/`
 
 ## clone dotfiles
 ```

@@ -38,10 +38,3 @@ great, now we have wezterm and can see colors properly. switch to wezterm.
 # hey congrats, you did it
 
 head over to the readme and start the nix stuff
-
-## p.s., after getting everything going, set the default shell to fish
-
-```
-sudo sh -c 'echo $(which fish) >> /etc/shells'
-chsh -s $(which fish)
-```

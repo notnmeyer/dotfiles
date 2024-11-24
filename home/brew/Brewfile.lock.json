@@ -2,10 +2,10 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "3e8fbee631be3e2dd03e361501f561f610cb82c4"
+        "revision": "0a3cc2a0863d2cacfcdfd321a7c19037921cd335"
       },
       "notnmeyer/daylog-cli": {
-        "revision": "4bfdc9e7e351020a14b1fa3b552e953ac723e339"
+        "revision": "a93a44c4fd103f4f1c324f2aa885601b7120df76"
       },
       "notnmeyer/tsk": {
         "revision": "38279f7a329f20e1414cc05dfda1ef39f6e33436"
@@ -52,7 +52,7 @@
         }
       },
       "notnmeyer/daylog-cli/daylog": {
-        "version": "0.2.1",
+        "version": "0.3.0",
         "bottle": false
       },
       "notnmeyer/tsk/tsk": {
@@ -62,7 +62,7 @@
     },
     "cask": {
       "1password": {
-        "version": "8.10.48",
+        "version": "8.10.50",
         "options": {
           "full_name": "1password"
         }
@@ -74,7 +74,7 @@
         }
       },
       "chatgpt": {
-        "version": "1.2024.289,1729717854",
+        "version": "1.2024.296,1729898050",
         "options": {
           "full_name": "chatgpt"
         }
@@ -104,7 +104,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.95.0",
+        "version": "1.95.1",
         "options": {
           "full_name": "visual-studio-code"
         }
@@ -119,6 +119,12 @@
         "version": "1.103.1.238,223cbba6",
         "options": {
           "full_name": "plex"
+        }
+      },
+      "vlc": {
+        "version": "3.0.21",
+        "options": {
+          "full_name": "vlc"
         }
       }
     }

@@ -42,6 +42,11 @@ in {
     home-manager.enable = true;
     ripgrep.enable = true;
 
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
+
     # necessary for starship to configure them
     bash.enable = false;
     zsh.enable = false;

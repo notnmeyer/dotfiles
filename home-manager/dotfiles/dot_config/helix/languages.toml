@@ -23,7 +23,7 @@ language-servers = ["ruby-lsp"]
 
 [[language]]
 name = "typescript"
-auto-format = false
+auto-format = true
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 language-servers = [
     "typescript-language-server"

@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "df3d86335bdd977136e89f8020d4a6c773bd5a8a"
+        "revision": "8fb98123dcfd97fa3d3fd85f6b72d634fd285faf"
       },
       "notnmeyer/daylog-cli": {
         "revision": "a93a44c4fd103f4f1c324f2aa885601b7120df76"
@@ -160,9 +160,15 @@
         }
       },
       "spotify": {
-        "version": "1.2.50.335",
+        "version": "1.2.51.345",
         "options": {
           "full_name": "spotify"
+        }
+      },
+      "steam": {
+        "version": "4.0",
+        "options": {
+          "full_name": "steam"
         }
       }
     }

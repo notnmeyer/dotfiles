@@ -6,6 +6,10 @@
 let
   commonPackages = import ./common.nix { inherit pkgs; };
 in {
+
+  # required for ngrok
+  nixpkgs.config.allowUnfree = true;
+
   nix = {
     package = pkgs.nix;
     settings.experimental-features = [ "nix-command" "flakes" ];
@@ -25,6 +29,7 @@ in {
     anonymousPro
     aws-vault
     chamber
+    ngrok
     terraform-ls
     tflint
     yamllint

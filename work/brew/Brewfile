@@ -8,6 +8,7 @@ brew "docker-credential-helper-ecr"
 
 cask "1password"
 cask "1password-cli"
+cask "chatgpt"
 cask "notion"
 cask "orbstack"
 cask "spotify"

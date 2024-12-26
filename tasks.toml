@@ -6,6 +6,14 @@ cmds = ["brew bundle --file {{.CLI_ARGS}}/brew/Brewfile"]
 description = "usage: tsk run -- (work|home)"
 cmds = ["home-manager switch -f ~/code/dotfiles/home-manager/{{.CLI_ARGS}}.nix"]
 
+[tasks."run:all"]
+description = "run home-manager and homebrew"
+deps = [
+  ["run"],
+  ["brew:install"],
+]
+cmds = ["echo Done!"]
+
 [tasks.run_with_backups]
 cmds = ["home-manager switch -f ~/code/dotfiles/home-manager/{{.CLI_ARGS}}.nix -b backup"]
 

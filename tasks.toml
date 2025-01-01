@@ -1,33 +1,29 @@
 [tasks."brew:install"]
-description = "usage: tsk brew:install -- (work|home)"
+desc = "-- work|home"
 cmds = ["brew bundle --file {{.CLI_ARGS}}/brew/Brewfile"]
 
 [tasks.run]
-description = "usage: tsk run -- (work|home)"
+desc = "-- work|home"
+description = "usage: tsk run -- <work|home>"
 cmds = ["home-manager switch -f ~/code/dotfiles/home-manager/{{.CLI_ARGS}}.nix"]
 
 [tasks."run:all"]
-description = "run home-manager and homebrew"
-deps = [
-  ["run"],
-  ["brew:install"],
-]
+desc = "-- work|home"
+deps = [["run"], ["brew:install"]]
 cmds = ["echo Done!"]
 
 [tasks.run_with_backups]
+desc = "-- work|home"
 cmds = ["home-manager switch -f ~/code/dotfiles/home-manager/{{.CLI_ARGS}}.nix -b backup"]
 
 [tasks."asdf:install"]
 cmds = ["asdf install"]
 
-[tasks."asdf:install_plugins"]
+[tasks."asdf:install:plugins"]
 cmds = [
-  "asdf plugin add argocd",
   "asdf plugin add awscli",
-  "asdf plugin add istioctl",
   "asdf plugin add kubectl",
   "asdf plugin add nodejs",
   "asdf plugin add python",
   "asdf plugin add terraform",
-  "asdf plugin add vault",
 ]

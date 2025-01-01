@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "notnmeyer/daylog-cli"
 tap "notnmeyer/tsk"
 
+brew "flyctl"
 brew "gh"
 brew "notnmeyer/daylog-cli/daylog"
 brew "notnmeyer/tsk/tsk"

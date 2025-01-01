@@ -50,6 +50,15 @@
       # set up macos homebrew, if installed
       if test -f /opt/homebrew/bin/brew >/dev/null
         eval (/opt/homebrew/bin/brew shellenv)
+
+        # setting up completions is necessary if fish wasnt installed by homebrew
+        if test -d (brew --prefix)"/share/fish/completions"
+          set -p fish_complete_path (brew --prefix)/share/fish/completions
+        end
+
+        if test -d (brew --prefix)"/share/fish/vendor_completions.d"
+          set -p fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
+        end
       end
 
       if which zoxide >/dev/null

@@ -29,6 +29,8 @@ in {
     anonymousPro
     aws-vault
     chamber
+    helm-ls
+    kubernetes-helm
     ngrok
     terraform-ls
     tflint

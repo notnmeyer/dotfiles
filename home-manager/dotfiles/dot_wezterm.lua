@@ -5,6 +5,8 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
+config.native_macos_fullscreen_mode = true
+
 -- colors
 config.color_scheme = "darkmoss (base16)"
 config.colors = {

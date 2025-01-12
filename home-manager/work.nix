@@ -29,9 +29,11 @@ in {
     anonymousPro
     aws-vault
     chamber
+    dive
     helm-ls
     kubernetes-helm
     ngrok
+    swaks
     terraform-ls
     tflint
     yamllint

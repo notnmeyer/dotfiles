@@ -2,7 +2,7 @@
 #   - man home-configuration.nix
 #   - https://mipmip.github.io/home-manager-option-search/
 
-{ config, pkgs, ... }:
+{ config, pkgs, dotfiles, ... }:
 let
   commonPackages = import ./common.nix { inherit pkgs; };
 in {
@@ -20,6 +20,7 @@ in {
     ./git.nix
     ./neovim.nix
     ./starship.nix
+    (import ./dotfiles.nix { inherit dotfiles; })
   ];
 
   home.username = "nate";
@@ -59,25 +60,6 @@ in {
     # necessary for starship to configure them
     bash.enable = false;
     zsh.enable = false;
-  };
-
-  home.file = {
-    ".config/alacritty/alacritty.yml".source = dotfiles/dot_config/alacritty/alacritty.yml;
-    ".config/zellij/config.kdl".source = dotfiles/dot_config/zellij/config.kdl;
-    ".terraformrc".source = dotfiles/dot_terraformrc;
-    ".tmux.conf".source = dotfiles/dot_tmux.conf;
-    ".tool-versions".source = dotfiles/dot_tool-versions;
-    ".wezterm.lua".source = dotfiles/dot_wezterm.lua;
-
-    ".config/helix" = {
-      source = dotfiles/dot_config/helix;
-      recursive = true;
-    };
-
-    ".config/nvim" = {
-      source = dotfiles/dot_config/nvim;
-      recursive = true;
-    };
   };
 
   home.sessionVariables = {

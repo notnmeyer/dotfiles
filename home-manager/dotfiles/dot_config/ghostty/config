@@ -1,4 +1,4 @@
-command = "zellij -l welcome"
+command = "~/.nix-profile/bin/zellij -l welcome"
 theme = "Everforest Dark - Hard"
 link-url = true
 

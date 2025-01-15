@@ -29,6 +29,7 @@ in {
   home.packages = with pkgs; [
     anonymousPro
     aws-vault
+    bats
     chamber
     dive
     helm-ls

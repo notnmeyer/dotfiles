@@ -33,6 +33,7 @@ in {
     chamber
     dive
     helm-ls
+    httpie
     kubernetes-helm
     ngrok
     swaks

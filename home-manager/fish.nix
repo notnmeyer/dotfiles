@@ -24,6 +24,10 @@
       gpr = "git pull --rebase";
       gp = "git push -u origin (git branch --show-current)";
       gs = "git status";
+      # kubectl
+      kcp = "kubectl config use-context production";
+      kcs = "kubectl config use-context staging";
+      kcu = "kubectl config unset current-context";
     };
 
     interactiveShellInit = ''

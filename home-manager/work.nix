@@ -32,6 +32,7 @@ in {
     bats
     chamber
     dive
+    gopls
     helm-ls
     httpie
     kubernetes-helm

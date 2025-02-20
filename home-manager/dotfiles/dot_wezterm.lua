@@ -1,6 +1,21 @@
 local wezterm = require("wezterm")
 local config = {}
 
+function get_appearance()
+  if wezterm.gui then
+    return wezterm.gui.get_appearance()
+  end
+  return 'Dark'
+end
+
+function scheme_for_appearance(appearance)
+  if appearance:find 'Dark' then
+    return 'Builtin Solarized Dark'
+  else
+    return 'Builtin Solarized Light'
+  end
+end
+
 if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
@@ -8,17 +23,18 @@ end
 config.native_macos_fullscreen_mode = true
 
 -- colors
-config.color_scheme = "darkmoss (base16)"
+config.color_scheme = scheme_for_appearance(get_appearance())
+-- "darkmoss (base16)"
 config.colors = {
 	cursor_fg = "white",
 }
 
 -- window
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE | RESIZE"
 config.window_padding = {
 	left = "1cell",
 	right = "1cell",
-	top = 0,
+	top = "0",
 	bottom = 0,
 }
 config.window_background_opacity = 0.90
@@ -37,7 +53,7 @@ config.adjust_window_size_when_changing_font_size = false
 
 -- tabs
 config.enable_tab_bar = true
-config.use_fancy_tab_bar = false
+config.use_fancy_tab_bar = true
 config.hide_tab_bar_if_only_one_tab = true
 
 -- background

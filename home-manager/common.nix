@@ -19,10 +19,10 @@
   gnutar
   go
   go-task
-  helm
   htop
   inetutils # for telnet
   jq
+  kubernetes-helm
   lazygit
   lua-language-server
   mosh

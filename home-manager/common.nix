@@ -19,6 +19,7 @@
   gnutar
   go
   go-task
+  helm
   htop
   inetutils # for telnet
   jq

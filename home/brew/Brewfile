@@ -7,7 +7,6 @@ brew "gh"
 brew "notnmeyer/daylog-cli/daylog"
 brew "notnmeyer/tsk/tsk"
 
-cask "autodesk-fusion"
 cask "bambu-studio"
 cask "1password"
 cask "1password-cli"

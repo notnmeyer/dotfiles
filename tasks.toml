@@ -27,3 +27,12 @@ cmds = [
   "asdf plugin add python",
   "asdf plugin add terraform",
 ]
+
+[tasks."create_project"]
+cmds = [
+  "mkdir -p {{.CLI_ARGS}}",
+  "cp ./templates/flake.nix {{.CLI_ARGS}}/",
+  "echo \".direnv\" >> {{.CLI_ARGS}}/.gitignore",
+  "echo \"use flake\" > {{.CLI_ARGS}}/.envrc",
+  "echo \"Done! Created {{.CLI_ARGS}}. Add your packages to flake.nix.\"",
+]

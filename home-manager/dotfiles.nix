@@ -1,6 +1,7 @@
 { dotfiles }:
 {
   home.file = {
+    ".config/aerospace/aerospace.toml".source = dotfiles/dot_config/aerospace/aerospace.toml;
     ".config/alacritty/alacritty.yml".source = dotfiles/dot_config/alacritty/alacritty.yml;
     ".config/ghostty/config".source = dotfiles/dot_config/ghostty/config;
     ".config/zellij/config.kdl".source = dotfiles/dot_config/zellij/config.kdl;

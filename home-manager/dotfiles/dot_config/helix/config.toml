@@ -1,30 +1,32 @@
 theme = "default"
 
 [editor]
-auto-save = true
 bufferline = "never"
 color-modes = true
 completion-replace = true
 cursorline = true
 end-of-line-diagnostics = "hint"
 insert-final-newline = true
+line-number = "relative"
+rulers = [100]
+popup-border = "all"
 text-width = 160
 true-color = true
-line-number = "relative"
 
 [editor.statusline]
-left = ["mode", "spinner", "version-control"]
-center = ["file-type", "file-modification-indicator", "file-name", "read-only-indicator"]
-right = ["workspace-diagnostics", "diagnostics", "register", "selections", "position", "file-encoding"]
+left = ["mode", "spinner", "version-control", "read-only-indicator"]
+center = ["file-type", "file-modification-indicator", "file-name"]
+right = ["diagnostics", "register", "selections", "position"]
 
 [editor.statusline.mode]
-normal = "NORMAL"
-insert = "INSERT"
-select = "SELECT"
+normal = "NOR"
+insert = "INS"
+select = "SEL"
 
 [editor.lsp]
 display-messages = true
-display-inlay-hints = false
+display-progress-messages = true
+display-inlay-hints = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -32,9 +34,24 @@ insert = "bar"
 [editor.file-picker]
 hidden = false
 
+[editor.auto-save]
+focus-lost = true
+
+[editor.indent-guides]
+render = true
+skip-levels = 2
+
 [editor.soft-wrap]
-enable = true
+enable = false
 wrap-at-text-width = true
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
+
+[keys.normal]
+"C-l" = [
+    ":write-all",
+    ":insert-output lazygit >/dev/tty",
+    ":redraw",
+    ":reload-all"
+]

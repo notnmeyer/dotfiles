@@ -27,10 +27,12 @@ in {
   home.homeDirectory = "/Users/nate";
 
   home.packages = with pkgs; [
+    awslogs
     anonymousPro
     aws-vault
     bats
     chamber
+    container-structure-test
     dive
     gopls
     helm-ls

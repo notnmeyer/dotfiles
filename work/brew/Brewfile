@@ -1,10 +1,12 @@
 tap "homebrew/bundle"
 tap "notnmeyer/daylog-cli"
 tap "notnmeyer/tsk"
+tap "supabase/tap"
 
 brew "notnmeyer/daylog-cli/daylog"
 brew "notnmeyer/tsk/tsk"
 brew "docker-credential-helper-ecr"
+brew "supabase/tap/supabase"
 
 cask "1password"
 cask "1password-cli"
@@ -22,4 +24,5 @@ cask "tailscale"
 cask "utc-menu-clock"
 cask "visual-studio-code"
 cask "wezterm"
+cask "zed"
 cask "zoom"

@@ -14,11 +14,38 @@
       }
     ];
     extraConfig = {
-      push = {
-        autoSetupRemote = "true";
+      branch = {
+        sort = "-committerdate";
+      };
+      column = {
+        ui = "auto";
+      };
+      diff = {
+        algorithm = "histogram";
+        colorMoved = "plain";
+        mnemonicPrefix = "true";
+        renames = "true";
+      };
+      fetch = {
+        prune = "true";
+        pruneTags = "true";
+        all = "true";
       };
       init = {
         defaultBranch = "main";
+      };
+      push = {
+        autoSetupRemote = "true";
+        default = "simple";
+        followTags = "true";
+      };
+      rebase = {
+        autoSquash = "true";
+        autoStash = "true";
+        updateRefs = "true";
+      };
+      tag = {
+        sort = "version:refname";
       };
     };
   };

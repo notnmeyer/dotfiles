@@ -1,7 +1,9 @@
+tap "felixKratz/formulae"
 tap "homebrew/bundle"
 tap "notnmeyer/daylog-cli"
 tap "notnmeyer/tsk"
 
+brew "borders"
 brew "flyctl"
 brew "gh"
 brew "notnmeyer/daylog-cli/daylog"

@@ -34,6 +34,7 @@
       begin
         set -g fish_user_paths \
           "$HOME/.cargo/bin" \
+          "$HOME/.bun/bin" \
           "$HOME/bin" \
           "$HOME/go/bin" \
           "$HOME/.local/bin" \

@@ -26,7 +26,7 @@ select = "SEL"
 [editor.lsp]
 display-messages = true
 display-progress-messages = true
-display-inlay-hints = true
+display-inlay-hints = false
 
 [editor.cursor-shape]
 insert = "bar"

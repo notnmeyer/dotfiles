@@ -11,9 +11,15 @@
         error_symbol = "[➜](bold red)";
       };
 
+      username = {
+        disabled = true;
+        format = "[$user]($style)@";
+      };
+
       hostname = {
         ssh_only = false;
-        format = "\\([$hostname]($style)\\) ";
+        ssh_symbol = "ssh:";
+        format = "[$ssh_symbol$hostname]($style) ";
         style = "bold yellow";
       };
 

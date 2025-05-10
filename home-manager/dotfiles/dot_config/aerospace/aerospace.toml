@@ -213,3 +213,24 @@ if.app-id = 'com.spotify.client'
 if.during-aerospace-startup = true
 check-further-callbacks = true
 run = ['layout tiling', 'move-node-to-workspace 10_Music']
+
+# Slack
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+if.during-aerospace-startup = true
+check-further-callbacks = true
+run = ['layout tiling', 'move-node-to-workspace 2_Communication']
+
+# Linear
+[[on-window-detected]]
+if.app-id = 'com.linear'
+if.during-aerospace-startup = true
+check-further-callbacks = true
+run = ['layout tiling', 'move-node-to-workspace 3_Planning']
+
+# Notion
+[[on-window-detected]]
+if.app-id = 'notion.id'
+if.during-aerospace-startup = true
+check-further-callbacks = true
+run = ['layout tiling', 'move-node-to-workspace 3_Planning']

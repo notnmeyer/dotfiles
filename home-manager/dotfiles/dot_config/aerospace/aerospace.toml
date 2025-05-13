@@ -175,62 +175,65 @@ automatically-unhide-macos-hidden-apps = false
 # Ghostty
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
-if.during-aerospace-startup = true
-check-further-callbacks = true
 run = ['layout tiling', 'move-node-to-workspace 1_Default']
+check-further-callbacks = true
 
 # Zed
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
-if.during-aerospace-startup = true
-check-further-callbacks = true
 run = ['layout tiling', 'move-node-to-workspace 1_Default']
+check-further-callbacks = true
 
 # Messages
 [[on-window-detected]]
 if.app-id = 'com.apple.MobileSMS'
-if.during-aerospace-startup = true
-check-further-callbacks = true
 run = ['layout tiling', 'move-node-to-workspace 2_Communication']
+check-further-callbacks = true
 
 # Hey
 [[on-window-detected]]
 if.app-id = 'com.hey.app.desktop'
-if.during-aerospace-startup = true
-check-further-callbacks = true
 run = ['layout tiling', 'move-node-to-workspace 2_Communication']
+check-further-callbacks = true
 
 # Safari
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
-if.during-aerospace-startup = true
-check-further-callbacks = true
 run = ['layout tiling', 'move-node-to-workspace 4_Web']
+check-further-callbacks = true
+
+# Firefox
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+run = ['layout tiling', 'move-node-to-workspace 4_Web']
+check-further-callbacks = true
 
 # Spotify
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
-if.during-aerospace-startup = true
-check-further-callbacks = true
 run = ['layout tiling', 'move-node-to-workspace 10_Music']
+check-further-callbacks = true
 
 # Slack
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
-if.during-aerospace-startup = true
-check-further-callbacks = true
 run = ['layout tiling', 'move-node-to-workspace 2_Communication']
+check-further-callbacks = true
 
 # Linear
 [[on-window-detected]]
 if.app-id = 'com.linear'
-if.during-aerospace-startup = true
-check-further-callbacks = true
 run = ['layout tiling', 'move-node-to-workspace 3_Planning']
+check-further-callbacks = true
 
 # Notion
 [[on-window-detected]]
 if.app-id = 'notion.id'
-if.during-aerospace-startup = true
-check-further-callbacks = true
 run = ['layout tiling', 'move-node-to-workspace 3_Planning']
+check-further-callbacks = true
+
+# ChatGPT
+[[on-window-detected]]
+if.app-id = 'com.openai.chat'
+run = ['layout tiling', 'move-node-to-workspace 5']
+check-further-callbacks = true

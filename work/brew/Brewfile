@@ -1,8 +1,10 @@
+tap "felixKratz/formulae"
 tap "homebrew/bundle"
 tap "notnmeyer/daylog-cli"
 tap "notnmeyer/tsk"
 tap "supabase/tap"
 
+brew "borders"
 brew "notnmeyer/daylog-cli/daylog"
 brew "notnmeyer/tsk/tsk"
 brew "docker-credential-helper-ecr"

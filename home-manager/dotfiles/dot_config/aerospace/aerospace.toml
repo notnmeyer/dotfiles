@@ -196,6 +196,12 @@ if.app-id = 'com.hey.app.desktop'
 run = ['layout tiling', 'move-node-to-workspace 2_Communication']
 check-further-callbacks = true
 
+# Mail
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = ['layout tiling', 'move-node-to-workspace 2_Communication']
+check-further-callbacks = true
+
 # Safari
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'

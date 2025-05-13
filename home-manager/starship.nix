@@ -23,13 +23,15 @@
         style = "bold yellow";
       };
 
-      container.disabled = true;
-      gcloud.disabled = true;
-      kubernetes.disabled = false;
       time = {
         disabled = false;
         utc_time_offset = "local"; # "0" for utc
       };
+
+      container.disabled = true;
+      gcloud.disabled = true;
+      kubernetes.disabled = false;
+      jobs.disabled = false;
 
       # the git integration (and some others) can be slow
       command_timeout = 1000; # ms

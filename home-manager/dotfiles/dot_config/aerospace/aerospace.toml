@@ -141,7 +141,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-6 = 'move-node-to-workspace 6'
     alt-shift-7 = 'move-node-to-workspace 7'
     alt-shift-8 = 'move-node-to-workspace 8'
-    alt-shift-9 = 'move-node-to-workspace 9'
+    alt-shift-9 = 'move-node-to-workspace 9_AI'
     alt-shift-0 = 'move-node-to-workspace 10_Music'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
@@ -241,5 +241,5 @@ check-further-callbacks = true
 # ChatGPT
 [[on-window-detected]]
 if.app-id = 'com.openai.chat'
-run = ['layout tiling', 'move-node-to-workspace 5']
+run = ['layout tiling', 'move-node-to-workspace 9_AI']
 check-further-callbacks = true

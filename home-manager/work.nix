@@ -20,6 +20,7 @@ in {
     ./git.nix
     ./neovim.nix
     ./starship.nix
+    ./zellij.nix
     (import ./dotfiles.nix { inherit dotfiles; })
   ];
 

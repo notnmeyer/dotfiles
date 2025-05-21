@@ -17,6 +17,7 @@ in {
     ./neovim.nix
     ./nushell.nix
     ./starship.nix
+    ./zellij.nix
     (import ./dotfiles.nix { inherit dotfiles; })
   ];
 
@@ -37,14 +38,14 @@ in {
       };
     };
 
-    helix.enable = true;
-    home-manager.enable = true;
-    ripgrep.enable = true;
-
     direnv = {
       enable = true;
       nix-direnv.enable = true;
     };
+
+    helix.enable = true;
+    home-manager.enable = true;
+    ripgrep.enable = true;
 
     # necessary for starship to configure them
     bash.enable = false;

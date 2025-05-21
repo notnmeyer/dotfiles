@@ -44,6 +44,5 @@
   wget
   yaml-language-server
   yq
-  zellij
   zoxide
 ]

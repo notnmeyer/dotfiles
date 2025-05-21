@@ -1,37 +1,31 @@
+#
+# home
+#
 [tasks."home"]
 desc = "apply home config"
 cmds = ["nix run --impure .#homeConfigurations.nate-home.activationPackage"]
 
+[tasks."home:brew"]
+desc = "install home brew packages"
+cmds = ["brew bundle --file homebrew/home/Brewfile"]
+
+[tasks."home:all"]
+desc = "install home brew packages"
+deps = [["home"], ["home:brew"]]
+cmds = ["echo"]
+
+#
+# work
+#
 [tasks."work"]
 desc = "apply work config"
 cmds = ["nix run --impure .#homeConfigurations.nate-work.activationPackage"]
 
-[tasks."brew:install"]
-desc = "-- work|home"
-cmds = ["brew bundle --file {{.CLI_ARGS}}/brew/Brewfile"]
+[tasks."work:brew"]
+desc = "run homebrew"
+cmds = ["brew bundle --file homebrew/work/Brewfile"]
 
-[tasks.run]
-desc = "-- work|home"
-description = "usage: tsk run -- <work|home>"
-cmds = ["home-manager switch -f ~/code/dotfiles/home-manager/{{.CLI_ARGS}}.nix"]
-
-[tasks."run:all"]
-desc = "-- work|home"
-deps = [["run"], ["brew:install"]]
-cmds = ["echo Done!"]
-
-[tasks.run_with_backups]
-desc = "-- work|home"
-cmds = ["home-manager switch -f ~/code/dotfiles/home-manager/{{.CLI_ARGS}}.nix -b backup"]
-
-[tasks."asdf:install"]
-cmds = ["asdf install"]
-
-[tasks."asdf:install:plugins"]
-cmds = [
-  "asdf plugin add awscli",
-  "asdf plugin add kubectl",
-  "asdf plugin add nodejs",
-  "asdf plugin add python",
-  "asdf plugin add terraform",
-]
+[tasks."work:all"]
+desc = "install home brew packages"
+deps = [["work"], ["work:brew"]]
+cmds = ["echo"]

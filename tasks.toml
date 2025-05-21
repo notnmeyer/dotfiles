@@ -1,3 +1,11 @@
+[tasks."home"]
+desc = "apply home config"
+cmds = ["nix run --impure .#homeConfigurations.nate-home.activationPackage"]
+
+[tasks."work"]
+desc = "apply work config"
+cmds = ["nix run --impure .#homeConfigurations.nate-work.activationPackage"]
+
 [tasks."brew:install"]
 desc = "-- work|home"
 cmds = ["brew bundle --file {{.CLI_ARGS}}/brew/Brewfile"]

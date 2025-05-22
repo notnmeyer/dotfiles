@@ -42,7 +42,7 @@ render = true
 skip-levels = 2
 
 [editor.soft-wrap]
-enable = false
+enable = true
 wrap-at-text-width = true
 
 [editor.inline-diagnostics]

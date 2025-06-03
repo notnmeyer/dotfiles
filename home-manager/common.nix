@@ -28,6 +28,7 @@
   mosh
   # libgcc # not available on macos :\
   nil # nix ls
+  nixfmt
   nodejs_22
   nodePackages.bash-language-server
   nodePackages.typescript-language-server

@@ -7,6 +7,10 @@ args = ["run", "/Users/nate/bin/helix-gpt", "--handler", "copilot"]
 [language-server.ruby-lsp]
 command = "ruby-lsp"
 
+[language-server.toml]
+command = "taplo"
+args = ["lsp", "stdio"]
+
 [language-server.yaml-language-server.config.yaml]
 format = { enable = true }
 validation = true
@@ -20,6 +24,11 @@ name = "ruby"
 auto-format = true
 formatter = { command = "rubocop", args = ["--stdin", "foo.rb", "-a", "--stderr", "--fail-level", "fatal"] }
 language-servers = ["ruby-lsp"]
+
+[[language]]
+name = "toml"
+auto-format = true
+language-servers = ["toml"]
 
 [[language]]
 name = "typescript"

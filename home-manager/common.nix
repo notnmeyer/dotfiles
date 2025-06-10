@@ -37,6 +37,7 @@
   qemu
   rustup
   shellcheck
+  taplo # toml lsp
   tig
   tmux
   tree

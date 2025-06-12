@@ -9,7 +9,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... }:
     let
-      system = "aarch64-darwin";
+      system = builtins.currentSystem;
       username = "nate";
     in {
       homeConfigurations = {

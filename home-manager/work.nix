@@ -29,7 +29,6 @@ in {
 
   home.packages = with pkgs; [
     awslogs
-    anonymousPro
     aws-vault
     bats
     chamber

@@ -26,7 +26,6 @@ in {
   home.homeDirectory = if pkgs.stdenv.isDarwin then "/Users/nate" else "/home/nate";
 
   home.packages = with pkgs; [
-    anonymousPro
     tailscale
   ] ++ commonPackages;
 

@@ -68,6 +68,7 @@ in {
   };
 
   home.sessionVariables = {
+    AWS_SESSION_TOKEN_TTL = "12h";
     AWS_VAULT_BACKEND = if pkgs.stdenv.isDarwin then "keychain" else "file";
     EDITOR = "hx";
   };

@@ -1,7 +1,7 @@
 #
 # home
 #
-[tasks."home"]
+[tasks.home]
 desc = "apply home config"
 cmds = ["nix run --impure .#homeConfigurations.nate-home.activationPackage"]
 

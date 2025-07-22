@@ -21,6 +21,7 @@
   go-task
   htop
   inetutils # for telnet
+  jujutsu
   jq
   kubernetes-helm
   lazygit

@@ -1,5 +1,5 @@
 command = "~/.nix-profile/bin/zellij -l welcome"
-theme = "Paraiso Dark"
+theme = "Ayu Mirage"
 link-url = true
 
 # makes things play nice with zellij

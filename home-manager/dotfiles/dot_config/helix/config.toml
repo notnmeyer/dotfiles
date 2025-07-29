@@ -1,4 +1,4 @@
-theme = "default"
+theme = "ayu_mirage"
 
 [editor]
 bufferline = "never"
@@ -50,8 +50,8 @@ cursor-line = "warning"
 
 [keys.normal]
 "C-l" = [
-    ":write-all",
-    ":insert-output lazygit >/dev/tty",
-    ":redraw",
-    ":reload-all"
+  ":write-all",
+  ":insert-output lazygit >/dev/tty",
+  ":redraw",
+  ":reload-all",
 ]

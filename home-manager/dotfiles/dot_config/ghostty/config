@@ -1,4 +1,3 @@
-command = "~/.nix-profile/bin/zellij -l welcome"
 theme = "Ayu Mirage"
 link-url = true
 

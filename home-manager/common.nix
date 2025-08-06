@@ -34,6 +34,7 @@
   nodePackages.bash-language-server
   nodePackages.typescript-language-server
   nodePackages.prettier
+  ollama
   postgresql_16
   qemu
   rustup

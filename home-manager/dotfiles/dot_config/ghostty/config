@@ -1,6 +1,7 @@
 command = "~/.nix-profile/bin/zellij -l welcome"
-theme = "Ayu Mirage"
+theme = "light:ayu_light,dark:Ayu Mirage"
 link-url = true
+
 
 # makes things play nice with zellij
 macos-option-as-alt = true

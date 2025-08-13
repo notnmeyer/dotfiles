@@ -30,10 +30,6 @@
   # libgcc # not available on macos :\
   nil # nix ls
   nixfmt
-  nodejs_22
-  nodePackages.bash-language-server
-  nodePackages.typescript-language-server
-  nodePackages.prettier
   ollama
   postgresql_16
   qemu
@@ -46,7 +42,6 @@
   watch
   watchexec
   wget
-  yaml-language-server
   yq
   zoxide
 ]

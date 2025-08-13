@@ -5,6 +5,7 @@
     ".config/alacritty/alacritty.yml".source = dotfiles/dot_config/alacritty/alacritty.yml;
     ".config/ghostty/config".source = dotfiles/dot_config/ghostty/config;
     ".config/zellij/config.kdl".source = dotfiles/dot_config/zellij/config.kdl;
+    ".default-npm-packages".source = dotfiles/dot_default-npm-packages;
     ".gemrc".source = dotfiles/dot_gemrc;
     ".terraformrc".source = dotfiles/dot_terraformrc;
     ".tmux.conf".source = dotfiles/dot_tmux.conf;

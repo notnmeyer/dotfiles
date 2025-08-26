@@ -9,7 +9,7 @@
     ".gemrc".source = dotfiles/dot_gemrc;
     ".terraformrc".source = dotfiles/dot_terraformrc;
     ".tmux.conf".source = dotfiles/dot_tmux.conf;
-    ".tool-versions".source = dotfiles/dot_tool-versions;
+    ".tool-versions".source = work_dotfiles/dot_tool-versions;
     ".wezterm.lua".source = dotfiles/dot_wezterm.lua;
 
     ".config/fish" = {

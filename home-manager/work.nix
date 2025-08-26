@@ -21,7 +21,7 @@ in {
     ./neovim.nix
     ./starship.nix
     ./zellij.nix
-    (import ./dotfiles.nix { inherit dotfiles; })
+    (import ./work_dotfiles.nix { inherit dotfiles; })
   ];
 
   home.username = "nate";

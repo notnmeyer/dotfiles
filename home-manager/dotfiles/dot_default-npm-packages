@@ -1,5 +1,6 @@
 @anthropic-ai/claude-code
 bash-language-server
-typescript-language-server
 prettier
+tsx
+typescript-language-server
 yaml-language-server

@@ -30,6 +30,7 @@
   # libgcc # not available on macos :\
   nil # nix ls
   nixfmt
+  nmap
   ollama
   postgresql_16
   qemu

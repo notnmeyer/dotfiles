@@ -28,6 +28,7 @@
   lua-language-server
   mosh
   # libgcc # not available on macos :\
+  ncurses
   nil # nix ls
   nixfmt
   nmap
@@ -44,5 +45,6 @@
   watchexec
   wget
   yq
+  zlib
   zoxide
 ]

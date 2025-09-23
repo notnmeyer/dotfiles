@@ -33,7 +33,7 @@
   nil # nix ls
   nixfmt
   nmap
-  ollama-app
+  ollama
   postgresql_16
   qemu
   rustup

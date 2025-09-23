@@ -23,6 +23,7 @@
   inetutils # for telnet
   jujutsu
   jq
+  k9s
   kubernetes-helm
   lazygit
   lua-language-server
@@ -32,7 +33,7 @@
   nil # nix ls
   nixfmt
   nmap
-  ollama
+  ollama-app
   postgresql_16
   qemu
   rustup
@@ -41,6 +42,7 @@
   tig
   tmux
   tree
+  utm
   watch
   watchexec
   wget

@@ -42,7 +42,6 @@
   tig
   tmux
   tree
-  utm
   watch
   watchexec
   wget

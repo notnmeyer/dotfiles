@@ -14,11 +14,17 @@
       }
     ];
     extraConfig = {
+      apply = {
+        whitespace = "fix";
+      };
       branch = {
         sort = "-committerdate";
       };
       column = {
         ui = "auto";
+      };
+      core = {
+        whitespace = "trailing-space,space-before-tab";
       };
       diff = {
         algorithm = "histogram";

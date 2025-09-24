@@ -22,7 +22,14 @@ validation = true
 [[language]]
 name = "ruby"
 auto-format = true
-formatter = { command = "rubocop", args = ["--stdin", "foo.rb", "-a", "--stderr", "--fail-level", "fatal"] }
+formatter = { command = "rubocop", args = [
+  "--stdin",
+  "foo.rb",
+  "-a",
+  "--stderr",
+  "--fail-level",
+  "fatal",
+] }
 language-servers = ["ruby-lsp"]
 
 [[language]]
@@ -34,26 +41,24 @@ language-servers = ["toml"]
 name = "typescript"
 auto-format = true
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
-language-servers = [
-    "typescript-language-server"
-]
+language-servers = ["typescript-language-server"]
 
 [[language]]
 name = "javascript"
 file-types = ["js", "jsx", "mjs", "cjs", "page"]
 auto-format = true
-formatter = { command = "prettier", args = ["--write", "--parser", "typescript"] }
-language-servers = [
-    "typescript-language-server"
-]
+formatter = { command = "prettier", args = [
+  "--write",
+  "--parser",
+  "typescript",
+] }
+language-servers = ["typescript-language-server"]
 
 [[language]]
 name = "go"
-language-servers = [
-    "gopls",
-]
+language-servers = ["gopls"]
 
 [[language]]
 name = "kotlin"
 indent = { tab-width = 2, unit = "  " }
-formatter = { command = "ktfmt" , args = [] }
+formatter = { command = "ktfmt", args = [] }

@@ -1,5 +1,6 @@
 command = "~/.nix-profile/bin/zellij -l welcome"
 theme = "light:Ayu Light,dark:Ayu Mirage"
+font-family = "Dank Mono"
 link-url = true
 
 

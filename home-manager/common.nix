@@ -45,6 +45,7 @@
   watch
   watchexec
   wget
+  xz # lzma replacement
   yq
   zlib
   zoxide

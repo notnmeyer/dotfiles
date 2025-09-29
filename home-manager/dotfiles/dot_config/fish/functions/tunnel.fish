@@ -1,8 +1,8 @@
 #
 # create a tunnel using tuns.sh
 # usage:
-#   tunnel --name <tunnel-name> --from <port> --to <port>
-# 
+#   tunnel --name=<tunnel-name> --from=<port> --to=<port>
+#
 function tunnel
     set -l name ""
     set -l from_port ""
@@ -10,15 +10,15 @@ function tunnel
 
     while test (count $argv) -gt 0
         switch $argv[1]
-            case --name
-                set name $argv[2]
-                set argv $argv[3..-1]
-            case --from
-                set from_port $argv[2]
-                set argv $argv[3..-1]
-            case --to
-                set to_port $argv[2]
-                set argv $argv[3..-1]
+            case --name=*
+                set name (string split --max 1 '=' $argv[1])[2]
+                set argv $argv[2..-1]
+            case --from=*
+                set from_port (string split --max 1 '=' $argv[1])[2]
+                set argv $argv[2..-1]
+            case --to=*
+                set to_port (string split --max 1 '=' $argv[1])[2]
+                set argv $argv[2..-1]
             case '*'
                 echo "Unknown option: $argv[1]"
                 return 1

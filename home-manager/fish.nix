@@ -75,6 +75,10 @@
         source ~/.nix-profile/share/asdf-vm/completions/asdf.fish
       end
 
+      if which mise >/dev/null
+        mise activate fish | source
+      end
+
       if test -f "$HOME/.config/fish/conf.d/secrets.env"
         source "$HOME/.config/fish/conf.d/secrets.env"
       end

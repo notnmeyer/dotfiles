@@ -18,6 +18,7 @@ in {
   imports = [
     ./fish.nix
     ./git.nix
+    ./mise.nix
     ./neovim.nix
     ./starship.nix
     ./zellij.nix

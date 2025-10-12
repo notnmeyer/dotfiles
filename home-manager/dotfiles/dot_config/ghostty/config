@@ -1,8 +1,10 @@
+# close without prompting, "are you sure?"
+confirm-close-surface = false
+
 command = "~/.nix-profile/bin/zellij -l welcome"
 theme = "light:Ayu Light,dark:Ayu Mirage"
 font-family = "Dank Mono"
 link-url = true
-
 
 # makes things play nice with zellij
 macos-option-as-alt = true

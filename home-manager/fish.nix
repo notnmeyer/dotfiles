@@ -38,7 +38,7 @@
           "$HOME/bin" \
           "$HOME/go/bin" \
           "$HOME/.local/bin" \
-          "/nix/var/nix/profiles/default/bin/" \
+          "/nix/var/nix/profiles/default/bin" \
           "$HOME/.nix-profile/bin" \
           "/opt/homebrew/bin" \
           "/usr/local/bin" \

@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+profile="$1"
+os=$(uname -s)
+arch=$(uname -m)
+
+main() {
+  if [[ -z "$profile" ]]; then
+    err "error: you must pass an arg indicating which profile to run."
+    err "options: home, work"
+    exit 1
+  fi
+
+  case "$os-$arch" in
+    Darwin-arm64)
+      platform="aarch64-darwin"
+      ;;
+    Linux-x86_64)
+      platform="x86_64-linux"
+      ;;
+    *)
+      err "Unsupported platform: $os-$arch"
+      exit 1
+      ;;
+  esac
+
+  echo "info: detected $platform and profile '$profile'"
+  tasks="$profile:$platform $profile:brew"
+  echo "info: running 'tsk $tasks'" && echo
+  # shellcheck disable=SC2086
+  tsk $tasks
+}
+
+err() {
+  echo "$@" >&2
+}
+
+main

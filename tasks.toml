@@ -1,35 +1,29 @@
+[tasks.run]
+desc = "run home-manager and homebrew for the detected platform"
+cmds = ["tsk/run {{.CLI_ARGS}}"]
+
 #
 # home
 #
-[tasks.home]
-desc = "apply home config"
-cmds = ["nix run --impure .#homeConfigurations.nate-home.activationPackage"]
+[tasks."home:aarch64-darwin"]
+desc = "apply home-manager config"
+cmds = ["home-manager switch --flake .#home:aarch64-darwin"]
 
-[tasks."home:hm"]
-desc = "run home-manager switch"
-cmds = ["home-manager switch --flake .#nate-home"]
+[tasks."home:x86_64-linux"]
+desc = "apply home-manager config"
+cmds = ["home-manager switch --flake .#home:x86_64-linux"]
 
 [tasks."home:brew"]
 desc = "install home brew packages"
 cmds = ["brew bundle --file homebrew/home/Brewfile"]
 
-[tasks."home:all"]
-desc = "install home brew packages"
-deps = [["home"], ["home:brew"]]
-cmds = ["echo"]
-
 #
 # work
 #
-[tasks."work"]
+[tasks."work:aarch64-darwin"]
 desc = "apply work config"
-cmds = ["nix run --impure .#homeConfigurations.nate-work.activationPackage"]
+cmds = ["home-manager switch --flake .#work:aarch64-darwin"]
 
 [tasks."work:brew"]
 desc = "run homebrew"
 cmds = ["brew bundle --file homebrew/work/Brewfile"]
-
-[tasks."work:all"]
-desc = "install home brew packages"
-deps = [["work"], ["work:brew"]]
-cmds = ["echo"]

@@ -9,18 +9,25 @@
 
   outputs = { self, nixpkgs, home-manager, ... }:
     let
-      system = builtins.currentSystem;
       username = "nate";
+      macos = "aarch64-darwin";
+      linux = "x86_64-linux";
     in {
       homeConfigurations = {
-        "${username}-home" = home-manager.lib.homeManagerConfiguration {
-          pkgs = import nixpkgs { inherit system; };
+        "home:${macos}" = home-manager.lib.homeManagerConfiguration {
+          pkgs = import nixpkgs { system = macos; };
           modules = [ ./home-manager/home.nix ];
           extraSpecialArgs = { inherit username; };
         };
 
-        "${username}-work" = home-manager.lib.homeManagerConfiguration {
-          pkgs = import nixpkgs { inherit system; };
+        "home:${linux}" = home-manager.lib.homeManagerConfiguration {
+          pkgs = import nixpkgs { system = linux; };
+          modules = [ ./home-manager/home.nix ];
+          extraSpecialArgs = { inherit username; };
+        };
+
+        "work:${macos}" = home-manager.lib.homeManagerConfiguration {
+          pkgs = import nixpkgs { system = macos; };
           modules = [ ./home-manager/work.nix ];
           extraSpecialArgs = { inherit username; };
         };

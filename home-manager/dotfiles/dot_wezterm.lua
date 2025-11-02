@@ -1,18 +1,18 @@
 local wezterm = require("wezterm")
 local config = {}
 
-function get_appearance()
+local function get_appearance()
   if wezterm.gui then
     return wezterm.gui.get_appearance()
   end
   return 'Dark'
 end
 
-function scheme_for_appearance(appearance)
+local function scheme_for_appearance(appearance)
   if appearance:find 'Dark' then
-    return 'Builtin Solarized Dark'
+    return 'Ayu Mirage'
   else
-    return 'Builtin Solarized Light'
+    return 'ayu_light'
   end
 end
 
@@ -22,24 +22,17 @@ end
 
 config.native_macos_fullscreen_mode = true
 
--- colors
 config.color_scheme = scheme_for_appearance(get_appearance())
--- "darkmoss (base16)"
-config.colors = {
-	cursor_fg = "white",
-}
 
 -- window
+-- config.window_decorations = "TITLE | RESIZE | MACOS_USE_BACKGROUND_COLOR_AS_TITLEBAR_COLOR" -- net yet, only in nightlies
 config.window_decorations = "TITLE | RESIZE"
 config.window_padding = {
-	left = "1cell",
-	right = "1cell",
-	top = "0",
-	bottom = 0,
+	left = "2cell",
+	right = "2cell",
+	top = "2cell",
+	bottom = "2cell",
 }
-config.window_background_opacity = 0.90
-config.macos_window_background_blur = 20
-
 -- set the initial size of the window
 config.initial_rows = 44
 
@@ -48,24 +41,13 @@ config.font = wezterm.font_with_fallback {
 	{ family = "Dank Mono" },
 	{ family = "Anonymous Pro" },
 }
-config.font_size = 16
+config.font_size = 14
 config.adjust_window_size_when_changing_font_size = false
 
 -- tabs
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = true
 config.hide_tab_bar_if_only_one_tab = true
-
--- background
--- local dimmer = { brightness = 0.1 }
--- config.background = {
---   {
---     source = {
---       File = '/Users/nate/Library/Mobile Documents/com~apple~CloudDocs/Wallpaper/6jijxrw6nfn01.jpg'
---     },
---     hsb = dimmer
---   }
--- }
 
 -- keybinds
 config.keys = {

@@ -11,7 +11,7 @@
         description = "slightly shorten the syntax for launch remote vscode sessions";
       };
       gg = {
-        body = "lazygit \"$argv\"";
+        body = "lazygit $argv";
         wraps = "lazygit";
       };
     };

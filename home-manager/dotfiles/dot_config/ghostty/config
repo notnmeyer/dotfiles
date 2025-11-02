@@ -1,7 +1,13 @@
 # close without prompting, "are you sure?"
 confirm-close-surface = false
+window-theme = system
 
-command = "~/.nix-profile/bin/zellij -l welcome"
+# remember tabs and panes
+window-save-state = always
+
+# can i survive?
+# command = "~/.nix-profile/bin/zellij -l welcome"
+
 theme = "light:Ayu Light,dark:Ayu Mirage"
 font-family = "Dank Mono"
 link-url = true
@@ -15,3 +21,11 @@ macos-non-native-fullscreen = true
 window-padding-x =  10
 window-padding-y = 10
 window-padding-balance = true
+
+# pane stuff
+unfocused-split-opacity = 0.97
+split-divider-color = #000000
+
+# keybinds
+keybind = ctrl+p>n=new_split:auto
+keybind = ctrl+t>r=prompt_surface_title

@@ -26,6 +26,7 @@
   k9s
   kubernetes-helm
   lazygit
+  lazyjj
   lua-language-server
   mosh
   # libgcc # not available on macos :\

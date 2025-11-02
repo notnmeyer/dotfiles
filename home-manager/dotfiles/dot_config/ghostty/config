@@ -1,38 +1,55 @@
-# close without prompting, "are you sure?"
-confirm-close-surface = false
-window-theme = system
+#
+# https://ghostty.org/docs/config/reference
+#
 
+auto-update-channel = tip
+
+# window settings
+macos-non-native-fullscreen = true
+macos-icon = xray
+window-padding-x =  10
+window-padding-y = 10
+window-padding-balance = true
+# close without prompt
+confirm-close-surface = false
 # remember tabs and panes
-window-save-state = always
+window-save-state = "always"
+shell-integration-features = true
+quick-terminal-position = center
 
 # can i survive?
 # command = "~/.nix-profile/bin/zellij -l welcome"
 
 theme = "light:Ayu Light,dark:Ayu Mirage"
 font-family = "Dank Mono"
+
+# url handling
 link-url = true
 
 # makes things play nice with zellij
 macos-option-as-alt = true
 keybind = alt+left=unbind
 keybind = alt+right=unbind
-macos-non-native-fullscreen = true
-
-window-padding-x =  10
-window-padding-y = 10
-window-padding-balance = true
 
 # pane stuff
 unfocused-split-opacity = 0.97
 split-divider-color = #000000
 
 # keybinds
-## panes
+## splits
+## create splits
 keybind = ctrl+p>n=new_split:auto
+keybind = ctrl+p>s>h=new_split:left
+keybind = ctrl+p>s>l=new_split:right
+keybind = ctrl+p>s>k=new_split:up
+keybind = ctrl+p>s>j=new_split:down
+
+## move between splits
 keybind = ctrl+p>h=goto_split:left
 keybind = ctrl+p>l=goto_split:right
 keybind = ctrl+p>k=goto_split:up
 keybind = ctrl+p>j=goto_split:down
+
 keybind = ctrl+p>f=toggle_split_zoom
 
 ## tabs
@@ -42,3 +59,5 @@ keybind = ctrl+t>n=new_tab
 ## quick terminal
 keybind = global:alt+f=toggle_quick_terminal
 
+## optional additional configs
+config-file = "?work"

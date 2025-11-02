@@ -27,5 +27,18 @@ unfocused-split-opacity = 0.97
 split-divider-color = #000000
 
 # keybinds
+## panes
 keybind = ctrl+p>n=new_split:auto
+keybind = ctrl+p>h=goto_split:left
+keybind = ctrl+p>l=goto_split:right
+keybind = ctrl+p>k=goto_split:up
+keybind = ctrl+p>j=goto_split:down
+keybind = ctrl+p>f=toggle_split_zoom
+
+## tabs
 keybind = ctrl+t>r=prompt_surface_title
+keybind = ctrl+t>n=new_tab
+
+## quick terminal
+keybind = global:alt+f=toggle_quick_terminal
+

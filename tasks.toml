@@ -27,3 +27,10 @@ cmds = ["home-manager switch --flake .#work:aarch64-darwin"]
 [tasks."work:brew"]
 desc = "run homebrew"
 cmds = ["brew bundle --file homebrew/work/Brewfile"]
+
+#
+# nix
+#
+[tasks."nix:upgrade"]
+desc = "upgrade nix"
+cmds = ["sudo nix upgrade-nix"]

@@ -34,3 +34,7 @@ cmds = ["brew bundle --file homebrew/work/Brewfile"]
 [tasks."nix:upgrade"]
 desc = "upgrade nix"
 cmds = ["sudo nix upgrade-nix"]
+
+[tasks."flake:update"]
+desc = "update flake"
+cmds = ["nix flake update"]

@@ -7,6 +7,7 @@ brew "borders"
 brew "flyctl"
 brew "gh"
 brew "notnmeyer/daylog-cli/daylog"
+brew "temporal"
 
 cask "bambu-studio"
 cask "1password"

@@ -17,11 +17,7 @@ window-save-state = "always"
 shell-integration-features = true
 quick-terminal-position = center
 
-# can i survive?
-# command = "~/.nix-profile/bin/zellij -l welcome"
-
-# theme = "light:Ayu Light,dark:Ayu Mirage"
-theme = "Ayu Mirage"
+theme = "light:Ayu Light,dark:Ayu Mirage"
 font-family = "Dank Mono"
 
 # url handling

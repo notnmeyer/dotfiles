@@ -4,6 +4,7 @@
   # asdf-vm # swapped for mise, see mise.nix
   awscli2
   aws-vault
+  colima
   docker-compose
   envsubst
   eza

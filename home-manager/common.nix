@@ -1,10 +1,10 @@
 { pkgs, ...}: with pkgs; [
   anonymousPro
   any-nix-shell # use the existing shell with `nix run` and `nix-shell`
-  # asdf-vm # swapped for mise, see mise.nix
   awscli2
   aws-vault
   colima
+  docker-client
   docker-compose
   envsubst
   eza
@@ -30,7 +30,6 @@
   lazyjj
   lua-language-server
   mosh
-  # libgcc # not available on macos :\
   ncurses
   nil # nix ls
   nixfmt

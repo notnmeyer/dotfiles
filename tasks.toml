@@ -14,8 +14,9 @@ desc = "apply home-manager config"
 cmds = ["home-manager switch --flake .#home:x86_64-linux"]
 
 [tasks."home:brew"]
-desc = "install home brew packages"
-cmds = ["brew bundle --file homebrew/home/Brewfile"]
+desc = "install homebrew packages"
+dir = "homebrew/home"
+cmds = ["brew bundle install --cleanup"]
 
 #
 # work
@@ -26,7 +27,8 @@ cmds = ["home-manager switch --flake .#work:aarch64-darwin"]
 
 [tasks."work:brew"]
 desc = "run homebrew"
-cmds = ["brew bundle --file homebrew/work/Brewfile"]
+dir = "homebrew/home"
+cmds = ["brew bundle install --cleanup"]
 
 #
 # nix

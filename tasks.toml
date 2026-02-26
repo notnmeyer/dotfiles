@@ -1,10 +1,10 @@
-[tasks.run]
-desc = "run home-manager and homebrew for the detected platform"
-cmds = ["tsk/run {{.CLI_ARGS}}"]
-
 #
 # home
 #
+[tasks.home]
+desc = "apply home config"
+cmds = ["tsk/run home"]
+
 [tasks."home:aarch64-darwin"]
 desc = "apply home-manager config"
 cmds = ["home-manager switch --flake .#home:aarch64-darwin"]
@@ -21,6 +21,10 @@ cmds = ["brew bundle install --cleanup"]
 #
 # work
 #
+[tasks.work]
+desc = "apply work config"
+cmds = ["tsk/run work"]
+
 [tasks."work:aarch64-darwin"]
 desc = "apply work config"
 cmds = ["home-manager switch --flake .#work:aarch64-darwin"]

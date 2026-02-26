@@ -6,6 +6,7 @@ tap "notnmeyer/tsk"
 brew "borders"
 brew "flyctl"
 brew "gh"
+brew "opencode"
 brew "notnmeyer/daylog-cli/daylog"
 brew "temporal"
 

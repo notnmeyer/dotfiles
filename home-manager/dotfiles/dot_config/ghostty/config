@@ -2,7 +2,7 @@
 # https://ghostty.org/docs/config/reference
 #
 
-auto-update-channel = tip
+auto-update-channel = stable
 
 # window settings
 macos-non-native-fullscreen = true

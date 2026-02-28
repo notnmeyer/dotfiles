@@ -34,6 +34,7 @@
   nil # nix ls
   nixfmt
   nmap
+  nushell
   ollama
   postgresql_16
   qemu

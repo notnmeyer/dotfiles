@@ -38,7 +38,6 @@
   ollama
   postgresql_16
   qemu
-  rustup
   shellcheck
   taplo # toml lsp
   tig

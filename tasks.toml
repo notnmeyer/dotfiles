@@ -31,7 +31,7 @@ cmds = ["home-manager switch --flake .#work:aarch64-darwin"]
 
 [tasks."work:brew"]
 desc = "run homebrew"
-dir = "homebrew/home"
+dir = "homebrew/work"
 cmds = ["brew bundle install --cleanup"]
 
 #

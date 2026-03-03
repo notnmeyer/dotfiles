@@ -1,6 +1,7 @@
 tap "felixKratz/formulae"
 tap "homebrew/bundle"
 tap "notnmeyer/daylog-cli"
+tap "notnmeyer/tsk"
 tap "supabase/tap"
 
 brew "borders"

@@ -25,6 +25,7 @@
   jujutsu
   jq
   k9s
+  kubectl
   kubernetes-helm
   lazygit
   lazyjj

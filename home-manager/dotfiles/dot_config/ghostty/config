@@ -31,6 +31,8 @@ keybind = alt+right=unbind
 # pane stuff
 unfocused-split-opacity = 0.97
 split-divider-color = #000000
+focus-follows-mouse = true
+
 
 # keybinds
 ## splits

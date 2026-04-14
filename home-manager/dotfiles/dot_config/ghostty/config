@@ -5,7 +5,7 @@
 auto-update-channel = stable
 
 # window settings
-macos-non-native-fullscreen = true
+macos-non-native-fullscreen = false
 macos-icon = holographic
 window-padding-x =  10
 window-padding-y = 10

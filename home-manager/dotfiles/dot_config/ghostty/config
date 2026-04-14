@@ -60,3 +60,4 @@ keybind = global:alt+f=toggle_quick_terminal
 
 ## optional additional configs
 config-file = "?work"
+config-file = ?auto/theme.ghostty

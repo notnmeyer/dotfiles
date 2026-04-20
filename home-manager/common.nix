@@ -1,4 +1,5 @@
 { pkgs, ...}: with pkgs; [
+  amazon-ecr-credential-helper
   anonymousPro
   any-nix-shell # use the existing shell with `nix run` and `nix-shell`
   awscli2

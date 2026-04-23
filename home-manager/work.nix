@@ -33,7 +33,6 @@ in {
     aws-vault
     bats
     chamber
-    container-structure-test
     dive
     gopls
     helm-ls

@@ -6,6 +6,7 @@
   aws-vault
   bun
   colima
+  container-structure-test
   docker-client
   docker-compose
   envsubst

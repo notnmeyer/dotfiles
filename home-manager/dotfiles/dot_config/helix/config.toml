@@ -54,3 +54,26 @@ cursor-line = "warning"
   ":redraw",
   ":reload-all",
 ]
+
+C-g = [
+  ":write-all",
+  ":new",
+  ":insert-output lazygit",
+  ":buffer-close!",
+  ":redraw",
+  ":reload-all",
+]
+
+# [keys.normal.space.g]
+# a = ":sh git add '%{buffer_name}'"
+
+[keys.normal.space.g]
+f = "changed_file_picker"
+a = ":sh git add '%{buffer_name}'"
+r = ":reset-diff-change"
+# inline blame
+b = ":run-shell-command ~/.config/helix/utils/blame_line_pretty.sh %{buffer_name} %{cursor_line}"
+# full file changes of last commit under cursor
+B = ':open %sh{~/.config/helix/utils/blame_file_pretty.sh %{buffer_name} %{cursor_line}}'
+# inline hunk changes
+h = ':run-shell-command ~/.config/helix/utils/git-hunk.sh %{buffer_name} %{cursor_line} 3'

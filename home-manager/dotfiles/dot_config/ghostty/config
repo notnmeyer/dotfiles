@@ -15,7 +15,11 @@ confirm-close-surface = false
 # remember tabs and panes
 window-save-state = "always"
 shell-integration-features = true
+
+# quick-terminal (opt-f)
 quick-terminal-position = center
+quick-terminal-size = 75%,75%
+quick-terminal-animation-duration = 0
 
 theme = "light:Ayu Light,dark:Ayu Mirage"
 font-family = "Dank Mono"

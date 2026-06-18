@@ -16,7 +16,7 @@ cmds = ["home-manager switch --flake .#home:x86_64-linux"]
 [tasks."home:brew"]
 desc = "install homebrew packages"
 dir = "homebrew/home"
-cmds = ["brew bundle install --cleanup"]
+cmds = ["brew bundle install --cleanup --force"]
 
 #
 # work

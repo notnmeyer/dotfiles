@@ -1,30 +1,29 @@
 # dotfiles
 
-## new machine or setting up from scratch?
-check out the [initial bootstrap](./docs/bootstrapping-a-new-machine.md) stuff first.
+managed with [mise](https://mise.jdx.dev): packages, dotfiles, and macos defaults. two profiles, `home` and `work`.
 
-## install nix
-via multi-user installation from: https://nixos.org/download
+## first time setup
+
 ```shell
-sh <(curl -L https://nixos.org/nix/install)
+# homebrew — needed for casks
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install mise
+git clone git@github.com:notnmeyer/dotfiles.git ~/code/dotfiles
+
+# bootstrap a profile
+cd ~/code/dotfiles
+mise bootstrap --env home|work
 ```
 
-## install home-manager
-``` shell
-nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager && \
-nix-channel --update && \
-nix-shell '<home-manager>' -A install
+`mise bootstrap` installs tools, links dotfiles, applies macos defaults, installs casks, and makes fish the login shell.
+
+then make the profile stick (from fish):
+
+## apply changes
+
+```shell
+mise bootstrap        # everything
+mise dotfiles apply   # just relink dotfiles
+mise install          # just tools
 ```
-
-## apply updates
-``` shell
-home-manager switch -f ~/code/dotfiles/home-manager/(home|work).nix
-```
-
-## notes
-
-- after a fresh installation, set up fish:
-  ``` shell
-  sudo sh -c 'echo $(which fish) >> /etc/shells'
-  chsh -s $(which fish)
-  ```

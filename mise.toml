@@ -1,0 +1,109 @@
+[settings]
+experimental = true
+# absolute so [dotfiles] sources resolve regardless of where the symlinked config lives
+dotfiles.root = "~/code/dotfiles/dotfiles"
+
+[tools]
+amazon-ecr-credential-helper = "latest"
+aws-cli = "latest"
+aws-vault = "latest"
+bat = "latest"
+bun = "latest"
+colima = "latest"
+container-structure-test = "latest"
+direnv = "latest"
+docker-cli = "latest"
+docker-compose = "latest"
+envsubst = "latest"
+eza = "latest"
+fd = "latest"
+fzf = "latest"
+git-lfs = "latest"
+glow = "latest"
+go = "latest"
+helm = "latest"
+jj = "latest"
+jq = "latest"
+k9s = "latest"
+kubectl = "latest"
+lazygit = "latest"
+lua-language-server = "latest"
+neovim = "latest"
+ollama = "latest"
+ripgrep = "latest"
+shellcheck = "latest"
+starship = "latest"
+taplo = "latest"
+task = "latest"
+tmux = "latest"
+watchexec = "latest"
+yq = "latest"
+zellij = "latest"
+zoxide = "latest"
+
+"github:notnmeyer/tsk" = "latest"
+"github:notnmeyer/daylog-cli" = { version = "latest", exe = "daylog" }
+
+[bootstrap.brew.taps]
+"brew/bundle" = "https://github.com/brew/homebrew-bundle.git"
+
+[bootstrap.packages]
+"brew:fish" = "latest"
+"brew:git" = "latest"
+"brew:git-flow" = "latest"
+"brew:gnu-tar" = "latest"
+"brew:gnupg" = "latest"
+"brew:htop" = "latest"
+"brew:inetutils" = "latest"
+"brew:lazyjj" = "latest"
+"brew:make" = "latest"
+"brew:mosh" = "latest"
+"brew:nmap" = "latest"
+"brew:postgresql@18" = "latest"
+"brew:qemu" = "latest"
+"brew:tig" = "latest"
+"brew:tree" = "latest"
+"brew:watch" = "latest"
+"brew:wget" = "latest"
+"brew:xz" = "latest"
+
+# casks live in the Brewfiles — mise's cask installer is unreliable
+
+[bootstrap.macos.finder]
+show_pathbar = true
+
+[bootstrap.macos.trackpad]
+tap_to_click = true
+
+[bootstrap.macos.defaults]
+"com.apple.finder" = { AppleShowAllFiles = true }
+
+[bootstrap.user]
+login_shell = "/opt/homebrew/bin/fish"
+
+# runs near the end of `mise bootstrap` — installs the active profile's Homebrew casks
+[tasks.bootstrap]
+run = 'brew bundle install --file="$HOME/code/dotfiles/homebrew/$MISE_ENV/Brewfile" --force --force-cleanup --upgrade'
+
+[dotfiles]
+"~/.config/aerospace/aerospace.toml" = {}
+"~/.config/alacritty/alacritty.yml" = {}
+"~/.config/bat/config" = {}
+"~/.config/fish" = { mode = "symlink-each" }
+"~/.config/gh/config.yml" = {}
+"~/.config/ghostty/config" = {}
+"~/.config/helix" = { mode = "symlink-each" }
+"~/.config/nvim" = { mode = "symlink-each" }
+"~/.config/starship.toml" = {}
+"~/.config/zellij/config.kdl" = {}
+"~/.default-npm-packages" = {}
+"~/.gemrc" = {}
+"~/.gitconfig" = {}
+"~/.terraformrc" = {}
+"~/.tmux.conf" = {}
+"~/.wezterm.lua" = {}
+
+# make the repo the global config (absolute sources; MISE_ENV picks the active overlay)
+"~/.config/mise/config.toml" = "~/code/dotfiles/mise.toml"
+"~/.config/mise/mise.home.toml" = "~/code/dotfiles/mise.home.toml"
+"~/.config/mise/mise.work.toml" = "~/code/dotfiles/mise.work.toml"

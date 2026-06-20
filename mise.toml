@@ -43,6 +43,7 @@ zoxide = "latest"
 
 "github:notnmeyer/tsk" = "latest"
 "github:notnmeyer/daylog-cli" = { version = "latest", exe = "daylog" }
+"github:earendil-works/pi" = "latest"
 
 [bootstrap.brew.taps]
 "brew/bundle" = "https://github.com/brew/homebrew-bundle.git"
@@ -69,6 +70,7 @@ zoxide = "latest"
 "brew:typescript-language-server" = "latest"
 "brew:watch" = "latest"
 "brew:wget" = "latest"
+"brew:worktrunk" = "latest" # https://worktrunk.dev, worktree management
 "brew:xz" = "latest"
 "brew:yaml-language-server" = "latest"
 

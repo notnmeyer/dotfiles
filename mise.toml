@@ -48,6 +48,8 @@ zoxide = "latest"
 "brew/bundle" = "https://github.com/brew/homebrew-bundle.git"
 
 [bootstrap.packages]
+"brew:bash-language-server" = "latest"
+"brew:eslint" = "latest"
 "brew:fish" = "latest"
 "brew:git" = "latest"
 "brew:git-flow" = "latest"
@@ -60,12 +62,15 @@ zoxide = "latest"
 "brew:mosh" = "latest"
 "brew:nmap" = "latest"
 "brew:postgresql@18" = "latest"
+"brew:prettier" = "latest"
 "brew:qemu" = "latest"
 "brew:tig" = "latest"
 "brew:tree" = "latest"
+"brew:typescript-language-server" = "latest"
 "brew:watch" = "latest"
 "brew:wget" = "latest"
 "brew:xz" = "latest"
+"brew:yaml-language-server" = "latest"
 
 # casks live in the Brewfiles — mise's cask installer is unreliable
 
@@ -96,7 +101,6 @@ run = 'brew bundle install --upgrade --file="$HOME/code/dotfiles/homebrew/$MISE_
 "~/.config/nvim" = { mode = "symlink-each" }
 "~/.config/starship.toml" = {}
 "~/.config/zellij/config.kdl" = {}
-"~/.default-npm-packages" = {}
 "~/.gemrc" = {}
 "~/.gitconfig" = {}
 "~/.terraformrc" = {}

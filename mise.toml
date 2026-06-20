@@ -83,7 +83,7 @@ login_shell = "/opt/homebrew/bin/fish"
 
 # runs near the end of `mise bootstrap` — installs the active profile's Homebrew casks
 [tasks.bootstrap]
-run = 'brew bundle install --file="$HOME/code/dotfiles/homebrew/$MISE_ENV/Brewfile" --force --force-cleanup --upgrade'
+run = 'brew bundle install --upgrade --file="$HOME/code/dotfiles/homebrew/$MISE_ENV/Brewfile"'
 
 [dotfiles]
 "~/.config/aerospace/aerospace.toml" = {}

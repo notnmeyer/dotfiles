@@ -16,9 +16,13 @@ cd ~/code/dotfiles
 mise bootstrap --env home|work
 ```
 
-`mise bootstrap` installs tools, links dotfiles, applies macos defaults, installs casks, and makes fish the login shell.
+# set the machines env
 
-then make the profile stick (from fish):
+so the correct mise.$MISE_ENV.toml file is included,
+
+```shell
+echo 'set -gx MISE_ENV home' > ~/.config/fish/conf.d/mise.fish
+```
 
 ## apply changes
 

@@ -41,6 +41,7 @@ end
 
 if which mise >/dev/null
   mise activate fish | source
+  mise completion fish | source
 end
 
 if which starship >/dev/null

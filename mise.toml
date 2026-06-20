@@ -106,6 +106,7 @@ run = 'brew bundle install --upgrade --file="$HOME/code/dotfiles/homebrew/$MISE_
 "~/.terraformrc" = {}
 "~/.tmux.conf" = {}
 "~/.wezterm.lua" = {}
+"~/.zshrc" = {}
 
 # make the repo the global config (absolute sources; MISE_ENV picks the active overlay)
 "~/.config/mise/config.toml" = "~/code/dotfiles/mise.toml"

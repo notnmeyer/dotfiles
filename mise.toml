@@ -100,7 +100,6 @@ run = 'brew bundle install --upgrade --file="$HOME/code/dotfiles/homebrew/$MISE_
 "~/.config/gh/config.yml" = {}
 "~/.config/ghostty/config" = {}
 "~/.config/helix" = { mode = "symlink-each" }
-"~/.config/nvim" = { mode = "symlink-each" }
 "~/.config/starship.toml" = {}
 "~/.config/zellij/config.kdl" = {}
 "~/.gemrc" = {}

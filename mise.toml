@@ -114,3 +114,4 @@ run = 'brew bundle install --upgrade --file="$HOME/code/dotfiles/homebrew/$MISE_
 "~/.config/mise/config.toml" = "~/code/dotfiles/mise.toml"
 "~/.config/mise/mise.home.toml" = "~/code/dotfiles/mise.home.toml"
 "~/.config/mise/mise.work.toml" = "~/code/dotfiles/mise.work.toml"
+"~/.config/mise/mise.linux.toml" = "~/code/dotfiles/mise.linux.toml"

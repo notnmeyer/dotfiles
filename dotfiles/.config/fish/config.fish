@@ -21,17 +21,22 @@ else
   set -gx AWS_VAULT_BACKEND file
 end
 
-# set up macos homebrew, if installed
-if test -f /opt/homebrew/bin/brew
-  eval (/opt/homebrew/bin/brew shellenv)
+# set up homebrew (macos /opt/homebrew or linux /home/linuxbrew), if installed.
+# brew shellenv prepends brew's bin to PATH, so the prefix doesn't need to be hardcoded above.
+for brew_path in /opt/homebrew/bin/brew /home/linuxbrew/.linuxbrew/bin/brew
+  if test -x $brew_path
+    eval ($brew_path shellenv)
 
-  # setting up completions is necessary if fish wasnt installed by homebrew
-  if test -d (brew --prefix)"/share/fish/completions"
-    set -p fish_complete_path (brew --prefix)/share/fish/completions
-  end
+    # setting up completions is necessary if fish wasnt installed by homebrew
+    if test -d (brew --prefix)"/share/fish/completions"
+      set -p fish_complete_path (brew --prefix)/share/fish/completions
+    end
 
-  if test -d (brew --prefix)"/share/fish/vendor_completions.d"
-    set -p fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
+    if test -d (brew --prefix)"/share/fish/vendor_completions.d"
+      set -p fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
+    end
+
+    break
   end
 end
 

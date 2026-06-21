@@ -1,0 +1,69 @@
+[user]
+	name = Nate Meyer
+	email = 672246+notnmeyer@users.noreply.github.com
+	username = notnmeyer
+
+[alias]
+	co = checkout
+	cob = checkout -b
+	prunelocal = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d; git remote -v update -p"
+
+[apply]
+	whitespace = fix
+
+[branch]
+	sort = -committerdate
+
+[color]
+	ui = auto
+
+[column]
+	ui = auto
+
+[commit]
+	gpgsign = false
+
+[core]
+	whitespace = trailing-space,space-before-tab
+
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[init]
+	defaultBranch = main
+
+[push]
+	autoSetupRemote = true
+	default = simple
+	followTags = true
+
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+
+[tag]
+	sort = version:refname
+
+[tig "color"]
+	cursor = black blue bold
+
+# gh credential helper
+[credential "https://github.com"]
+	helper = !gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !gh auth git-credential

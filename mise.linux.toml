@@ -1,0 +1,12 @@
+# Linux overlay — compose with a base profile, e.g. `set -Ux MISE_ENV home,linux`
+# (MISE_ENV is a comma list; later entries win, so `linux` overrides `mise.toml` +
+# `mise.home.toml`). Holds only what differs from macOS.
+
+# linuxbrew lives here instead of /opt/homebrew
+[bootstrap.user]
+login_shell = "/home/linuxbrew/.linuxbrew/bin/fish"
+
+# the base [tasks.bootstrap] runs `brew bundle` against the Brewfiles, which are
+# 100% macOS casks — unsupported on linuxbrew. Override to a no-op on Linux.
+[tasks.bootstrap]
+run = 'echo "linux: skipping brew bundle (Brewfiles are macOS casks only)"'

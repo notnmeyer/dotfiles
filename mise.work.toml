@@ -1,0 +1,23 @@
+# Work profile — merges over mise.toml when MISE_ENV=work.
+
+[env]
+AWS_SESSION_TOKEN_TTL = "12h"
+
+[tools]
+bats = "latest"
+chamber = "latest"
+dive = "latest"
+helm-ls = "latest"
+node = "26.0.0"
+terraform-ls = "latest"
+tflint = "latest"
+yamllint = "latest"
+"go:golang.org/x/tools/gopls" = "latest"
+"pipx:httpie" = "latest"
+"pipx:awslogs" = "latest"
+"github:goreleaser/goreleaser-pro" = "latest"
+"github:loops-so/cli" = "latest"
+
+[bootstrap.packages]
+"brew:docker-credential-helper-ecr" = "latest"
+"brew:swaks" = "latest"

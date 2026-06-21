@@ -1,14 +1,11 @@
-begin
-    set -g fish_user_paths \
-        "$HOME/.cargo/bin" \
-        "$HOME/.bun/bin" \
-        "$HOME/bin" \
-        "$HOME/go/bin" \
-        "$HOME/.local/bin" \
-        /opt/homebrew/bin \
-        /usr/local/bin \
-        "$fish_user_paths"
-end
+# homebrew bins are handled by `brew shellenv` below, so they're not listed here.
+fish_add_path -g \
+    "$HOME/.cargo/bin" \
+    "$HOME/.bun/bin" \
+    "$HOME/bin" \
+    "$HOME/go/bin" \
+    "$HOME/.local/bin" \
+    /home/linuxbrew/.linuxbrew/bin
 
 #
 # environment

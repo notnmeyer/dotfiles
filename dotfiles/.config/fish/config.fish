@@ -24,33 +24,35 @@ for brew_path in /opt/homebrew/bin/brew /home/linuxbrew/.linuxbrew/bin/brew
     if test -x $brew_path
         eval ($brew_path shellenv)
 
-        # setting up completions is necessary if fish wasnt installed by homebrew
-        if test -d (brew --prefix)"/share/fish/completions"
-            set -p fish_complete_path (brew --prefix)/share/fish/completions
+        # setting up completions is necessary if fish wasnt installed by homebrew.
+        # brew shellenv (above) already exported $HOMEBREW_PREFIX, so reuse it
+        # instead of shelling out to `brew --prefix` on every startup.
+        if test -d "$HOMEBREW_PREFIX/share/fish/completions"
+            set -p fish_complete_path "$HOMEBREW_PREFIX/share/fish/completions"
         end
 
-        if test -d (brew --prefix)"/share/fish/vendor_completions.d"
-            set -p fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
+        if test -d "$HOMEBREW_PREFIX/share/fish/vendor_completions.d"
+            set -p fish_complete_path "$HOMEBREW_PREFIX/share/fish/vendor_completions.d"
         end
 
         break
     end
 end
 
-if which zoxide >/dev/null
+if type -q zoxide
     zoxide init fish | source
 end
 
-if which mise >/dev/null
+if type -q mise
     mise activate fish | source
-    mise completion fish | source
+    # if mise is installed with fish, the completions should be lazy loaded automatically.
 end
 
-if which starship >/dev/null
+if type -q starship
     starship init fish | source
 end
 
-if which direnv >/dev/null
+if type -q direnv
     direnv hook fish | source
 end
 

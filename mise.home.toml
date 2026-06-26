@@ -5,5 +5,4 @@ node = "24.8.0"
 
 [bootstrap.packages]
 "brew:flyctl" = "latest"
-"brew:gh" = "latest"
 "brew:opencode" = "latest"

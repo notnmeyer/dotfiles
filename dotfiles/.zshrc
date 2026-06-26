@@ -23,3 +23,5 @@ if command -v mise >/dev/null; then
 fi
 
 autoload -Uz compinit && compinit
+
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi

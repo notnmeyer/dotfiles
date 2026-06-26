@@ -22,6 +22,7 @@ git-lfs = "latest"
 glow = "latest"
 go = "latest"
 helm = "latest"
+hyperfine = "latest"
 jj = "latest"
 jq = "latest"
 k9s = "latest"
@@ -44,7 +45,6 @@ zoxide = "latest"
 "github:notnmeyer/tsk" = "latest"
 "github:notnmeyer/daylog-cli" = { version = "latest", exe = "daylog" }
 "github:earendil-works/pi" = "latest"
-hyperfine = "latest"
 
 [bootstrap.brew.taps]
 "brew/bundle" = "https://github.com/brew/homebrew-bundle.git"

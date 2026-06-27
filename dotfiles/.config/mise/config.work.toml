@@ -1,4 +1,4 @@
-# Work profile — merges over mise.toml when MISE_ENV=work.
+# Work profile — merges over config.toml when MISE_ENV=work.
 
 [env]
 AWS_SESSION_TOKEN_TTL = "12h"

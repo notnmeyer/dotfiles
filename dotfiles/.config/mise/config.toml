@@ -111,8 +111,8 @@ run = 'brew bundle install --upgrade --file="$HOME/code/dotfiles/homebrew/$MISE_
 "~/.wezterm.lua" = {}
 "~/.zshrc" = {}
 
-# make the repo the global config (absolute sources; MISE_ENV picks the active overlay)
-"~/.config/mise/config.toml" = "~/code/dotfiles/mise.toml"
-"~/.config/mise/mise.home.toml" = "~/code/dotfiles/mise.home.toml"
-"~/.config/mise/mise.work.toml" = "~/code/dotfiles/mise.work.toml"
-"~/.config/mise/mise.linux.toml" = "~/code/dotfiles/mise.linux.toml"
+# global mise config, symlinked into ~/.config/mise/ (MISE_ENV picks the active overlay)
+"~/.config/mise/config.toml" = {}
+"~/.config/mise/config.home.toml" = {}
+"~/.config/mise/config.work.toml" = {}
+"~/.config/mise/config.linux.toml" = {}

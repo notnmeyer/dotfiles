@@ -1,4 +1,4 @@
-# Home profile — merges over mise.toml when MISE_ENV=home.
+# Home profile — merges over config.toml when MISE_ENV=home.
 
 [tools]
 node = "24.8.0"

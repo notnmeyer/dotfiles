@@ -12,8 +12,6 @@ bun = "latest"
 colima = "latest"
 container-structure-test = "latest"
 direnv = "latest"
-docker-cli = "latest"
-docker-compose = "latest"
 envsubst = "latest"
 eza = "latest"
 fd = "latest"
@@ -45,12 +43,15 @@ zoxide = "latest"
 "github:notnmeyer/tsk" = "latest"
 "github:notnmeyer/daylog-cli" = { version = "latest", exe = "daylog" }
 "github:earendil-works/pi" = "latest"
+lima = "latest"
 
 [bootstrap.brew.taps]
 "brew/bundle" = "https://github.com/brew/homebrew-bundle.git"
 
 [bootstrap.packages]
 "brew:bash-language-server" = "latest"
+"brew:docker" = "latest"
+"brew:docker-compose" = "latest"
 "brew:eslint" = "latest"
 "brew:fish" = "latest"
 "brew:gh" = "latest"

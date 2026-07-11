@@ -1,6 +1,6 @@
 function j --description 'pick a job with fzf; enter=fg, ctrl+b=bg'
     set -l sel (jobs | fzf --expect=enter,ctrl-b \
-        --header="pick a job to resume\nenter: fg · ctrl-b: bg" --header-first)
+        --header="pick a job to resume: <enter> fg · <ctrl-b> bg" --header-first)
     test (count $sel) -ge 2; or return # cancelled / no selection
 
     set -l key $sel[1] # key pressed (from --expect)

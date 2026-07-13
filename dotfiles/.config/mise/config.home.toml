@@ -1,7 +1,7 @@
 # Home profile — merges over config.toml when MISE_ENV=home.
 
 [tools]
-node = "24.8.0"
+node = "26.5.0"
 
 [bootstrap.packages]
 "brew:flyctl" = "latest"

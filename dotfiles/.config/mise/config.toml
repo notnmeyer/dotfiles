@@ -44,6 +44,8 @@ zoxide = "latest"
 "github:earendil-works/pi" = "latest"
 lima = "latest"
 ghtkn = "latest"
+gh = "latest"
+worktrunk = "latest"
 
 [bootstrap.brew.taps]
 "brew/bundle" = "https://github.com/brew/homebrew-bundle.git"

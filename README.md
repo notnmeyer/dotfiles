@@ -16,6 +16,7 @@ mise install          # just tools
 
 brew install mise fish
 git clone git@github.com:notnmeyer/dotfiles.git ~/code/dotfiles
+```
 
 ### mise
 

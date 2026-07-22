@@ -77,3 +77,5 @@ alias gs 'git status'
 alias kcp 'kubectl config use-context production'
 alias kcs 'kubectl config use-context staging'
 alias kcu 'kubectl config unset current-context'
+
+alias claw 'openclaw agent --agent main -m'

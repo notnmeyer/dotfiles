@@ -40,12 +40,12 @@ zoxide = "latest"
 
 "github:notnmeyer/tsk" = "latest"
 "github:notnmeyer/daylog-cli" = { version = "latest", exe = "daylog" }
-"github:earendil-works/pi" = "latest"
 lima = "latest"
 ghtkn = "latest"
 gh = "latest"
 worktrunk = "latest"
 ollama = "latest"
+pi = "0.80.7"
 
 [bootstrap.brew.taps]
 "brew/bundle" = "https://github.com/brew/homebrew-bundle.git"

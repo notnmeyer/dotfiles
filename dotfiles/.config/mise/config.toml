@@ -45,6 +45,7 @@ ghtkn = "latest"
 gh = "latest"
 worktrunk = "latest"
 ollama = "latest"
+node = "latest"
 pi = "0.80.7"
 
 [bootstrap.brew.taps]

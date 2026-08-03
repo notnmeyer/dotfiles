@@ -39,7 +39,7 @@ zellij = "latest"
 zoxide = "latest"
 
 "github:notnmeyer/tsk" = "latest"
-"github:notnmeyer/daylog-cli" = { version = "latest", exe = "daylog" }
+"github:notnmeyer/daylog-cli" = { version = "latest", exe = "daylog", minimum_release_age = "0s" }
 lima = "latest"
 ghtkn = "latest"
 gh = "latest"

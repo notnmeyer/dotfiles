@@ -17,7 +17,7 @@ yamllint = "latest"
 "pipx:httpie" = "latest"
 "pipx:awslogs" = "latest"
 "github:goreleaser/goreleaser-pro" = "latest"
-"github:loops-so/cli" = "latest"
+"github:loops-so/cli" = { version = "latest", minimum_release_age = "0s" }
 
 [bootstrap.packages]
 "brew:docker-credential-helper-ecr" = "latest"

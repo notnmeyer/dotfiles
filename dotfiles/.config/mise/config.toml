@@ -75,7 +75,6 @@ pi = "latest"
 "brew:qemu" = "latest"
 "brew:tig" = "latest"
 "brew:tree" = "latest"
-"brew:typescript-language-server" = "latest"
 "brew:watch" = "latest"
 "brew:wget" = "latest"
 "brew:worktrunk" = "latest"                  # https://worktrunk.dev, worktree management

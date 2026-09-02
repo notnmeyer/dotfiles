@@ -32,23 +32,6 @@ auto-format = true
 language-servers = ["toml"]
 
 [[language]]
-name = "typescript"
-auto-format = true
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
-language-servers = ["typescript-language-server"]
-
-[[language]]
-name = "javascript"
-file-types = ["js", "jsx", "mjs", "cjs", "page"]
-auto-format = true
-formatter = { command = "prettier", args = [
-  "--write",
-  "--parser",
-  "typescript",
-] }
-language-servers = ["typescript-language-server"]
-
-[[language]]
 name = "go"
 language-servers = ["gopls"]
 

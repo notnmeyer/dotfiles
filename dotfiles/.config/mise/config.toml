@@ -38,7 +38,7 @@ yq = "latest"
 zellij = "latest"
 zoxide = "latest"
 
-"github:notnmeyer/tsk" = "latest"
+"github:notnmeyer/tsk" = {  version = "latest", minimum_release_age = "0s" }
 "github:notnmeyer/daylog-cli" = { version = "latest", exe = "daylog", minimum_release_age = "0s" }
 lima = "latest"
 ghtkn = "latest"
@@ -46,7 +46,8 @@ gh = "latest"
 worktrunk = "latest"
 ollama = "latest"
 node = "latest"
-pi = "latest"
+pi = {  version = "latest", minimum_release_age = "0s" }
+"github:basecamp/hey-cli" = "latest"
 
 [bootstrap.brew.taps]
 "brew/bundle" = "https://github.com/brew/homebrew-bundle.git"

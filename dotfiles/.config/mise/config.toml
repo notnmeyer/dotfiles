@@ -48,6 +48,7 @@ ollama = "latest"
 node = "latest"
 pi = {  version = "latest", minimum_release_age = "0s" }
 "github:basecamp/hey-cli" = "latest"
+codex = "latest"
 
 [bootstrap.brew.taps]
 "brew/bundle" = "https://github.com/brew/homebrew-bundle.git"

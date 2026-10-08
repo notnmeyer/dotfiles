@@ -78,7 +78,7 @@ alias kcp 'kubectl config use-context production'
 alias kcs 'kubectl config use-context staging'
 alias kcu 'kubectl config unset current-context'
 
-alias claw 'openclaw agent --agent main -m'
+alias wts 'wt switch'
 
 # expand `-some thing` or `- some thing` using  `__expand_to_daylog_append`
 abbr --add dash --position command --regex '^-.*' --set-cursor='%' --function __expand_to_daylog_append

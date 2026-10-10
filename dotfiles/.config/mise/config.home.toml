@@ -6,3 +6,4 @@ node = "latest"
 [bootstrap.packages]
 "brew:flyctl" = "latest"
 "brew:opencode" = "latest"
+"brew:omniwm" = "latest"

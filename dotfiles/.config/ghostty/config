@@ -62,6 +62,9 @@ keybind = ctrl+t>n=new_tab
 ## quick terminal
 keybind = global:alt+f=toggle_quick_terminal
 
+## new window
+keybind = global:alt+n=new_window
+
 ## optional additional configs
 config-file = "?work"
 config-file = ?auto/theme.ghostty

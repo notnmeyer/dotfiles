@@ -85,7 +85,7 @@ animationSpeed = 1.0
 animationsEnabled = true
 defaultLayoutType = "niri"
 hotkeysEnabled = true
-hyperKeyModifiers = "Control+Option+Shift+Command"
+hyperKeyModifiers = "Control+Option+Command"
 ipcEnabled = false
 preventSleepEnabled = false
 systemHyperTrigger = "None"
@@ -538,19 +538,19 @@ binding = "Unassigned"
 id = "switchWorkspace.previous"
 
 [[hotkeys]]
-binding = "Option+Left Arrow"
+binding = "Control+Option+Command+Left Arrow"
 id = "focus.left"
 
 [[hotkeys]]
-binding = "Option+Down Arrow"
+binding = "Control+Option+Command+Down Arrow"
 id = "focus.down"
 
 [[hotkeys]]
-binding = "Option+Up Arrow"
+binding = "Control+Option+Command+Up Arrow"
 id = "focus.up"
 
 [[hotkeys]]
-binding = "Option+Right Arrow"
+binding = "Control+Option+Command+Right Arrow"
 id = "focus.right"
 
 [[hotkeys]]
@@ -650,19 +650,19 @@ binding = "Unassigned"
 id = "moveColumnToWorkspace.8"
 
 [[hotkeys]]
-binding = "Option+Shift+Left Arrow"
+binding = "Control+Option+Shift+Command+Left Arrow"
 id = "move.left"
 
 [[hotkeys]]
-binding = "Option+Shift+Down Arrow"
+binding = "Control+Option+Shift+Command+Down Arrow"
 id = "move.down"
 
 [[hotkeys]]
-binding = "Option+Shift+Up Arrow"
+binding = "Control+Option+Shift+Command+Up Arrow"
 id = "move.up"
 
 [[hotkeys]]
-binding = "Option+Shift+Right Arrow"
+binding = "Control+Option+Shift+Command+Right Arrow"
 id = "move.right"
 
 [[hotkeys]]

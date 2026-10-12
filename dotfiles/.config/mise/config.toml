@@ -109,6 +109,7 @@ run = 'brew bundle install --upgrade --file="$HOME/code/dotfiles/homebrew/$MISE_
 "~/.config/gh/config.yml" = {}
 "~/.config/ghostty/config" = {}
 "~/.config/helix" = { mode = "symlink-each" }
+"~/.config/karabiner" = {}
 "~/.config/omniwm/settings.toml" = {}
 "~/.config/starship.toml" = {}
 "~/.config/worktrunk" = { mode = "symlink-each" }

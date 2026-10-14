@@ -27,3 +27,5 @@ yamllint = "latest"
 [bootstrap.packages]
 "brew:docker-credential-helper-ecr" = "latest"
 "brew:swaks" = "latest"
+"brew-cask:omniwm" = "latest"
+"brew-cask:karabiner-elements" = "latest"

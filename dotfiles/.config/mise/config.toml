@@ -48,6 +48,7 @@ zoxide = "latest"
 
 "github:notnmeyer/daylog-cli" = { version = "latest", exe = "daylog", minimum_release_age = "0s" }
 "github:basecamp/hey-cli" = "latest"
+"github:max-sixty/worktrunk" = "latest"
 "github:notnmeyer/tsk" = {  version = "latest", minimum_release_age = "0s" }
 
 [bootstrap.brew.taps]

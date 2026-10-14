@@ -84,3 +84,8 @@ alias wtm 'wt merge'
 
 # expand `-some thing` or `- some thing` using  `__expand_to_daylog_append`
 abbr --add dash --position command --regex '^-.*' --set-cursor='%' --function __expand_to_daylog_append
+
+# profile overlay, mirrors mise's config.$MISE_ENV.toml
+if set -q MISE_ENV; and test -f "$HOME/.config/fish/config.$MISE_ENV.fish"
+    source "$HOME/.config/fish/config.$MISE_ENV.fish"
+end

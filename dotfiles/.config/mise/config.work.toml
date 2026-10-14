@@ -13,11 +13,16 @@ pipx = "latest"
 terraform-ls = "latest"
 tflint = "latest"
 yamllint = "latest"
-"go:golang.org/x/tools/gopls" = "latest"
-"pipx:httpie" = "latest"
-"pipx:awslogs" = "latest"
+
+"aqua:cloudflare/cfssl/cfssl-scan" = "latest"
+
 "github:goreleaser/goreleaser-pro" = "latest"
 "github:loops-so/cli" = { version = "latest", minimum_release_age = "0s" }
+
+"go:golang.org/x/tools/gopls" = "latest"
+
+"pipx:awslogs" = "latest"
+"pipx:httpie" = "latest"
 
 [bootstrap.packages]
 "brew:docker-credential-helper-ecr" = "latest"

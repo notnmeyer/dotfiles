@@ -71,13 +71,13 @@ moveMouseToFocusedWindow = false
 raiseOnMouseFocus = false
 
 [gaps]
-fullscreenUsesOuterGaps = false
+fullscreenUsesOuterGaps = true
 size = 16.0
 
 [gaps.outer]
-bottom = 0.0
-left = 0.0
-right = 0.0
+bottom = 16.0
+left = 16.0
+right = 16.0
 top = 0.0
 
 [general]
@@ -194,23 +194,24 @@ useWorkspaceId = false
 autoHide = false
 autoHideHideDelayMilliseconds = 0.0
 autoHideRevealDelayMilliseconds = 0.0
-backgroundOpacity = 0.1
+backgroundOpacity = 0.0
 deduplicateAppIcons = true
 enabled = true
 excludedBundleIDs = []
-height = 24.0
+height = 26.0
 hideEmptyWorkspaces = true
 hideInNativeFullscreen = false
 hoverPreviewsEnabled = true
+inactiveIconOpacity = 0.7000000000000001
 notchActiveZoneWidth = 180.0
-notchMode = "off"
+notchMode = "rightOfNotch"
 notificationBadgeRefreshIntervalSeconds = 5.0
 notificationBadges = "dot"
 position = "overlappingMenuBar"
 reserveLayoutSpace = false
 revealHoldMilliseconds = 200.0
 revealModifier = "off"
-showAccentHighlights = true
+showAccentHighlights = false
 showFloatingWindows = false
 showItemBackgrounds = true
 showLabels = true
@@ -219,7 +220,7 @@ systemStatsButton = false
 transparentBackground = false
 windowLevel = "status"
 xOffset = 0.0
-yOffset = 0.0
+yOffset = 3.0
 
 [workspaceBar.iconOverrides]
 
@@ -1075,7 +1076,7 @@ type = "main"
 
 [[workspaces]]
 id = "454CECD4-5E9D-4ED1-95D7-979D48817F5F"
-layoutType = "dwindle"
+layoutType = "niri"
 name = "2"
 
 [workspaces.monitorAssignment]
@@ -1083,7 +1084,7 @@ type = "main"
 
 [[workspaces]]
 id = "BEB842B5-E894-4791-9FD1-397C3CDD3538"
-layoutType = "niri"
+layoutType = "dwindle"
 name = "3"
 
 [workspaces.monitorAssignment]

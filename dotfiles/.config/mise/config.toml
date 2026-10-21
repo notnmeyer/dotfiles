@@ -50,6 +50,7 @@ zoxide = "latest"
 "github:basecamp/hey-cli" = "latest"
 "github:max-sixty/worktrunk" = "latest"
 "github:notnmeyer/tsk" = {  version = "latest", minimum_release_age = "0s" }
+"npm:typescript" = "latest"
 
 [bootstrap.brew.taps]
 "brew/bundle" = "https://github.com/brew/homebrew-bundle.git"

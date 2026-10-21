@@ -39,3 +39,23 @@ language-servers = ["gopls"]
 name = "kotlin"
 indent = { tab-width = 2, unit = "  " }
 formatter = { command = "ktfmt", args = [] }
+
+[language-server.tsgo]
+command = "tsc"
+args = ["--lsp", "-stdio"]
+
+[[language]]
+name = "typescript"
+language-servers = ["tsgo"]
+
+[[language]]
+name = "tsx"
+language-servers = ["tsgo"]
+
+[[language]]
+name = "javascript"
+language-servers = ["tsgo"]
+
+[[language]]
+name = "jsx"
+language-servers = ["tsgo"]
